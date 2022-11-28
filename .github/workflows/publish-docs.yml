@@ -1,4 +1,4 @@
-name: Check Generated Docs
+name: Publish Docs
 
 on:
   push:
