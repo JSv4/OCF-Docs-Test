@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Generate documentation
-        run: npm run generate-docs
+        run: npm run generate-pretty-docs
 
       - name: Copy README to /docs
         run: cp README.md ./docs/README.md
