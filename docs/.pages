@@ -1,3 +1,5 @@
 nav:
-  - README.md
-  - schema
+
+- Introduction: 'INDEX.md'
+- OCF Schemas: schema
+- Tutorials: how_tos
