@@ -2,4 +2,5 @@ nav:
 
 - Introduction: 'INDEX.md'
 - OCF Schemas: schema
-- Tutorials: how_tos
+- Tutorials:
+  - 'Model a Transfer': /how_tos/Transfers.md
