@@ -16,7 +16,7 @@ describe("Enum", () => {
         [SCHEMA_NODE_FIXTURE],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -24,7 +24,7 @@ describe("Enum", () => {
       const actual = new Enum(
         schema,
         SCHEMA_NODE_FIXTURE,
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -42,7 +42,7 @@ describe("Enum", () => {
         [SCHEMA_NODE_FIXTURE],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -50,13 +50,13 @@ describe("Enum", () => {
       const actual = new Enum(
         schema,
         SCHEMA_NODE_FIXTURE,
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
       ).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/INDEX.md)
 
 ---
 

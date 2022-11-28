@@ -114,7 +114,7 @@ describe("File", () => {
         ],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -122,13 +122,13 @@ describe("File", () => {
       const actual = new File(
         schema,
         FILE_FIXTURE,
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
       ).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/INDEX.md)
 
 ---
 

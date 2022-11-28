@@ -17,7 +17,7 @@ describe("TypePattern", () => {
         [FIXTURE],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -25,13 +25,13 @@ describe("TypePattern", () => {
       const actual = new TypePattern(
         schema,
         FIXTURE,
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
       ).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/INDEX.md)
 
 ---
 

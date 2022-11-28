@@ -23,7 +23,7 @@ describe("Primitive", () => {
         [FIXTURE],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -31,13 +31,13 @@ describe("Primitive", () => {
       const actual = new Primitive(
         schema,
         FIXTURE,
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
       ).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/INDEX.md)
 
 ---
 

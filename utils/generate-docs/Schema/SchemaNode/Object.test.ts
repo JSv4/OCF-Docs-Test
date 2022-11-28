@@ -79,7 +79,7 @@ describe("Object", () => {
         ],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -87,13 +87,13 @@ describe("Object", () => {
       const actual = new Object(
         schema,
         OBJECT_SCHEMA_NODE_FIXTURE,
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
       ).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/INDEX.md)
 
 ---
 

@@ -22,7 +22,7 @@ describe("SchemaNode", () => {
         [FIXTURE],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -30,7 +30,7 @@ describe("SchemaNode", () => {
       const schemaNode = new DummyNode(
         schema,
         FIXTURE,
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -74,7 +74,7 @@ describe("SchemaNode", () => {
         [FIXTURE],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -82,7 +82,7 @@ describe("SchemaNode", () => {
       const schemaNode = new DummyNode(
         schema,
         FIXTURE,
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -126,7 +126,7 @@ describe("SchemaNode", () => {
         [FIXTURE],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -134,7 +134,7 @@ describe("SchemaNode", () => {
       const schemaNode = new DummyNode(
         schema,
         FIXTURE,
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true

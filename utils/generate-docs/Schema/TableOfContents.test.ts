@@ -18,7 +18,7 @@ describe("TableOfContents", () => {
         [SCHEMA_NODE_FIXTURE],
         [],
         [],
-        "https://opencaptablecoalition.com/README.md",
+        "https://opencaptablecoalition.com/INDEX.md",
         "/docs",
         "",
         true

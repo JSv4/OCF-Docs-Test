@@ -45,7 +45,7 @@ export default class Schema {
     await SchemaWriter.write(path.join(ROOT), schema);
     await TableOfContents.write(
       schema,
-      path.join(ROOT, "README.md"),
+      path.join(ROOT, "/docs/INDEX.md"),
       repoUrlRoot ? repoUrlRoot : ""
     );
   };

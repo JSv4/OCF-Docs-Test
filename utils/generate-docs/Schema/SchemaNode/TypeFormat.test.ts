@@ -17,7 +17,7 @@ describe("TypeFormat", () => {
         [FIXTURE],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -25,13 +25,13 @@ describe("TypeFormat", () => {
       const actual = new TypeFormat(
         schema,
         FIXTURE,
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
       ).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/INDEX.md)
 
 ---
 

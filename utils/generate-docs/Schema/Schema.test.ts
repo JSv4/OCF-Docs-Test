@@ -23,7 +23,7 @@ describe("Schema", () => {
         [FILE_SCHEMA_JSON_FIXTURE],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
@@ -68,7 +68,7 @@ describe("Schema", () => {
         [FILE_SCHEMA_JSON_FIXTURE],
         [],
         [],
-        "/README.md",
+        "/docs/INDEX.md",
         "/docs",
         "",
         true
