@@ -10,6 +10,10 @@ OCF (or **O**pen **C**ap Table **F**ormat) is a data standard developed by the O
 easy and accurate exchange and use of company capitalization information through a standardized format. It is made
 freely available for anyone to use, though changes must be made through the Coalition's [change process](#how-to-contribute).
 
+## Documentation
+
+OCF has extensive, auto-generated documentation available on our [GitHub.io page](https://jsv4.github.io/OCF-Docs-Test/INDEX/). Please go there to view our latest documentation.
+
 ## How Does It Work?
 
 ### OCF File Types
