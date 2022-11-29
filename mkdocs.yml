@@ -1,5 +1,6 @@
 site_name: Open CapTable Format Specification
 repo_url: https://github.com/JSv4/OCF-Docs-Test
+edit_uri: OCF-Docs-Test/
 site_author: Open Cap Table Coalition
 site_description: Official documentation for the Open Cap Format (OCF).
 theme:
