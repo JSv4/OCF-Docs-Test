@@ -21,25 +21,10 @@ export interface SchemaNodeJson {
 export default abstract class SchemaNode {
   protected readonly schema: Schema;
   protected readonly json: SchemaNodeJson;
-  protected readonly docIndexPath: string;
-  protected readonly docsUrlRoot: string | undefined;
-  protected readonly repoUrlRoot: string | undefined;
-  protected readonly addFileExtension: boolean | undefined;
 
-  constructor(
-    schema: Schema,
-    json: SchemaNodeJson,
-    docIndexPath: string,
-    docsUrlRoot?: string,
-    repoUrlRoot?: string,
-    addFileExtension?: boolean
-  ) {
+  constructor(schema: Schema, json: SchemaNodeJson) {
     this.schema = schema;
     this.json = json;
-    this.docIndexPath = docIndexPath;
-    this.repoUrlRoot = repoUrlRoot;
-    this.docsUrlRoot = docsUrlRoot;
-    this.addFileExtension = addFileExtension;
   }
 
   protected type = () => this.json["type"];
@@ -96,15 +81,9 @@ export default abstract class SchemaNode {
 
   description = () => this.json["description"];
 
-  // TODO - allow input of separate source and output roots (so we can link to
-  // specific branches / tags in the source and also host our docs elsewhere).
-  jsonSourcePath = () =>
-    `${this.repoUrlRoot ? this.repoUrlRoot : ""}/${this.shortId()}.schema.json`;
+  sourcePath = () => `/${this.shortId()}.schema.json`;
 
-  docMdLink = () =>
-    `${this.docsUrlRoot ? this.docsUrlRoot : ""}/${this.shortId()}${
-      this.addFileExtension ? ".md" : ""
-    }`;
+  outputPath = () => `/docs/${this.shortId()}.md`;
 
   propertiesJson = () => this.json["properties"];
 
@@ -121,7 +100,7 @@ export default abstract class SchemaNode {
     ...this.allOf().flatMap((schemaNode) => schemaNode.required()),
   ];
 
-  markdownHeader = () => `:house: [Documentation Home](${this.docIndexPath})
+  markdownHeader = () => `:house: [Documentation Home](/README.md)
 
 ---
 
@@ -159,7 +138,7 @@ export default abstract class SchemaNode {
 
   abstract markdownOutput(): string;
 
-  markdownSourceLink = () => `[${this.shortId()}](${this.jsonSourcePath()})`;
+  markdownSourceLink = () => `[${this.shortId()}](${this.sourcePath()})`;
 
-  markdownOutputLink = () => `[${this.shortId()}](${this.docMdLink()})`;
+  markdownOutputLink = () => `[${this.shortId()}](${this.outputPath()})`;
 }

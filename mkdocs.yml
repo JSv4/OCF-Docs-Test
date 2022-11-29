@@ -30,6 +30,8 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 plugins:
   - search
+  - awesome-pages # Required for pagenav-generator
+  - pagenav-generator
   - awesome-pages:
       collapse_single_pages: true
       strict: false

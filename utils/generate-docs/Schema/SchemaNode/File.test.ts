@@ -103,32 +103,17 @@ const ENUM_SCHEMA_NODE_FIXTURE: EnumSchemaNodeJson = {
 describe("File", () => {
   describe("#markdownOutput", () => {
     it("returns a string representing the node as Markdown", () => {
-      const schema = new Schema(
-        [
-          BASE_OBJECT_SCHEMA_NODE_FIXTURE,
-          OBJECT_SCHEMA_NODE_FIXTURE,
-          ENUM_FILE_TYPE_SCHEMA_NODE_FIXTURE,
-          ENUM_SCHEMA_NODE_FIXTURE,
-          BASE_FILE_SCHEMA_NODE_FIXTURE,
-          FILE_FIXTURE,
-        ],
-        [],
-        [],
-        "/docs/INDEX.md",
-        "/docs",
-        "",
-        true
-      );
-      const actual = new File(
-        schema,
+      const schema = new Schema([
+        BASE_OBJECT_SCHEMA_NODE_FIXTURE,
+        OBJECT_SCHEMA_NODE_FIXTURE,
+        ENUM_FILE_TYPE_SCHEMA_NODE_FIXTURE,
+        ENUM_SCHEMA_NODE_FIXTURE,
+        BASE_FILE_SCHEMA_NODE_FIXTURE,
         FILE_FIXTURE,
-        "/docs/INDEX.md",
-        "/docs",
-        "",
-        true
-      ).markdownOutput();
+      ]);
+      const actual = new File(schema, FILE_FIXTURE).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/docs/INDEX.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
 
 ---
 
@@ -152,63 +137,6 @@ describe("File", () => {
 | items     | [ [schema/objects/Valuation](/docs/schema/objects/Valuation.md) ]                                      | Example ref array property | -        |
 
 **Source Code:** [schema/files/TestFile](/schema/files/TestFile.schema.json)
-
-Copyright © 2022 Open Cap Table Coalition.
-`);
-    });
-  });
-  describe("#markdownOutputMkDocs", () => {
-    it("returns a string representing the node as Markdown for display on  MkDocs", () => {
-      const schema = new Schema(
-        [
-          BASE_OBJECT_SCHEMA_NODE_FIXTURE,
-          OBJECT_SCHEMA_NODE_FIXTURE,
-          ENUM_FILE_TYPE_SCHEMA_NODE_FIXTURE,
-          ENUM_SCHEMA_NODE_FIXTURE,
-          BASE_FILE_SCHEMA_NODE_FIXTURE,
-          FILE_FIXTURE,
-        ],
-        [],
-        [],
-        "https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/README",
-        "https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/docs",
-        "https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF",
-        false
-      );
-      const actual = new File(
-        schema,
-        FILE_FIXTURE,
-        "https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/README",
-        "https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/docs",
-        "https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF",
-        false
-      ).markdownOutput();
-
-      expect(actual)
-        .toEqual(`:house: [Documentation Home](https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/README)
-
----
-
-### Test Title
-
-\`https://opencaptablecoalition.com/schema/files/TestFile.schema.json\`
-
-**Description:** _This is a test fixture exemplifying a File schema from OCF_
-
-**Data Type:** \`OCF_TEST_FILE\`
-
-**Composed From:**
-
-- [schema/primitives/files/File](https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/docs/schema/primitives/files/File)
-
-**Properties:**
-
-| Property  | Type                                                                                                                                                              | Description                | Required |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | -------- |
-| file_type | **Constant:** \`OCF_TEST_FILE\`</br>_Defined in [schema/enums/FileType](https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/docs/schema/enums/FileType)_ | Object type field          | -        |
-| items     | [ [schema/objects/Valuation](https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/docs/schema/objects/Valuation) ]                                      | Example ref array property | -        |
-
-**Source Code:** [schema/files/TestFile](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/schema/files/TestFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.
 `);

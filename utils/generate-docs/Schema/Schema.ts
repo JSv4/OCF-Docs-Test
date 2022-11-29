@@ -22,12 +22,7 @@ const ROOT = path.resolve(fileURLToPath(import.meta.url), "../../../..");
  *  Schema represents the OCF schema format.
  */
 export default class Schema {
-  static generateDocs = async (
-    docIndexPath: string,
-    docsUrlRoot?: string,
-    repoUrlRoot?: string,
-    addFileExtension?: boolean
-  ) => {
+  static generateDocs = async () => {
     const schemaNodeJsons = await SchemaReader.read(path.join(ROOT, "schema"));
     const exampleJsons = await ExamplesReader.read(path.join(ROOT, "samples"));
     const supplementalMarkdowns = await SupplementalsReader.read(
@@ -36,21 +31,10 @@ export default class Schema {
     const schema = new Schema(
       schemaNodeJsons,
       exampleJsons,
-      supplementalMarkdowns,
-      docIndexPath,
-      docsUrlRoot,
-      repoUrlRoot,
-      addFileExtension
+      supplementalMarkdowns
     );
     await SchemaWriter.write(path.join(ROOT), schema);
-    await TableOfContents.write(
-      schema,
-      path.join(ROOT, "/docs/INDEX.md"),
-      docIndexPath ? docIndexPath : "",
-      docsUrlRoot ? docsUrlRoot : "",
-      repoUrlRoot ? repoUrlRoot : "",
-      Boolean(addFileExtension).valueOf()
-    );
+    await TableOfContents.write(schema, path.join(ROOT, "README.md"));
   };
 
   readonly schemaNodes: SchemaNode[];
@@ -60,21 +44,10 @@ export default class Schema {
   constructor(
     schemaNodeJsons: SchemaNodeJson[],
     exampleJsons: ExampleJson[] = [],
-    supplementalMarkdowns: string[] = [],
-    docIndexPath: string,
-    docsUrlRoot?: string,
-    repoUrlRoot?: string,
-    addFileExtension?: boolean
+    supplementalMarkdowns: string[] = []
   ) {
     this.schemaNodes = schemaNodeJsons.map((json: SchemaNodeJson) =>
-      SchemaNodeFactory.build(
-        this,
-        json,
-        docIndexPath,
-        docsUrlRoot,
-        repoUrlRoot,
-        addFileExtension
-      )
+      SchemaNodeFactory.build(this, json)
     );
     this.examples = new Examples(exampleJsons);
     this.supplementals = new Supplementals(supplementalMarkdowns);

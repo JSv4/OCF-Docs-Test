@@ -1,4 +1,4 @@
-:house: [Documentation Home](INDEX.md)
+:house: [Documentation Home](../README.md)
 
 # OCF Transfers
 

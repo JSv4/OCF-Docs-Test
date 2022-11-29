@@ -11,46 +11,19 @@ const README_INSERT_END = "## Developer Information";
  * into the project's README.
  */
 export default class TableOfContents {
-  static write = (
-    schema: Schema,
-    readmePath: string,
-    docIndexPath: string,
-    docsUrlRoot: string,
-    repoUrlRoot: string,
-    addFileExtension: boolean
-  ) => {
-    const tableOfContents = new TableOfContents(
-      schema,
-      docIndexPath,
-      docsUrlRoot,
-      repoUrlRoot,
-      addFileExtension
-    );
+  static write = (schema: Schema, readmePath: string) => {
+    const tableOfContents = new TableOfContents(schema);
     const readmeString = fse.readFileSync(readmePath).toString();
     return fse.writeFile(
       readmePath,
-      tableOfContents.replaceTocInIndexTemplateString(readmeString)
+      tableOfContents.replaceTocInReadmeString(readmeString)
     );
   };
 
   protected readonly schema: Schema;
-  protected readonly repoUrlRoot: string;
-  protected readonly docIndexPath: string;
-  protected readonly docsUrlRoot: string;
-  protected readonly addFileExtension: boolean;
 
-  constructor(
-    schema: Schema,
-    docIndexPath: string,
-    docsUrlRoot: string,
-    repoUrlRoot: string,
-    addFileExtension: boolean
-  ) {
+  constructor(schema: Schema) {
     this.schema = schema;
-    this.repoUrlRoot = repoUrlRoot;
-    this.docIndexPath = docIndexPath;
-    this.docsUrlRoot = docsUrlRoot;
-    this.addFileExtension = addFileExtension;
   }
 
   protected markdownFromSchemaNode = (
@@ -62,7 +35,7 @@ export default class TableOfContents {
     .description()
     .replace(/\n/g, "\n  ")
     .replace(/ \n/g, "\n")}
-  - **View more:** [${schemaNode.shortId()}](${schemaNode.docMdLink()})`;
+  - **View more:** [${schemaNode.shortId()}](${schemaNode.outputPath()})`;
 
   protected markdownForSchemaNodesOfParentType = (parentType: string) =>
     this.schema
@@ -73,31 +46,31 @@ export default class TableOfContents {
 
   markdown = () => `## Schemas are divided into five folders:
 
-### [Files](${this.repoUrlRoot}/schema/files)
+### [Files](/schema/files)
 
 _Describes the eight top-level files that hold OCF objects and are required to export or import a cap table._
 
 ${this.markdownForSchemaNodesOfParentType("files")}
 
-### [Objects](${this.repoUrlRoot}/schema/objects)
+### [Objects](/schema/objects)
 
 _Describing the structure of OCF -- these contain the common object properties \`id\` and \`comments\`_
 
 ${this.markdownForSchemaNodesOfParentType("objects")}
 
-### [Enums](${this.repoUrlRoot}/schema/enums)
+### [Enums](/schema/enums)
 
 _Key enumerations used throughout the schemas_
 
 ${this.markdownForSchemaNodesOfParentType("enums")}
 
-### [Types](${this.repoUrlRoot}/schema/types)
+### [Types](/schema/types)
 
 _Used as common building blocks for properties that are more complex than primitives but don't need separate unique Ids._
 
 ${this.markdownForSchemaNodesOfParentType("types")}
 
-### [Primitives](${this.repoUrlRoot}/schema/primitives)
+### [Primitives](/schema/primitives)
 
 _Used for object property composition and enforcing uniform properties across parts of the schema._
 
@@ -105,20 +78,8 @@ ${this.markdownForSchemaNodesOfParentType("primitives")}
 
 `;
 
-  replaceTocInIndexTemplateString = (indexTemplateString: string) =>
-    indexTemplateString.slice(
-      0,
-      indexTemplateString.indexOf(README_INSERT_START)
-    ) +
+  replaceTocInReadmeString = (readmeString: string) =>
+    readmeString.slice(0, readmeString.indexOf(README_INSERT_START)) +
     this.markdown() +
-    indexTemplateString.slice(indexTemplateString.indexOf(README_INSERT_END));
-
-  replaceHomeInReadmeString = (indexTemplateString: string) =>
-    indexTemplateString.replaceAll("{{docs_index}}", this.docIndexPath);
-
-  replaceRepoUrlInIndexTemplateString = (indexTemplateString: string) =>
-    indexTemplateString.replaceAll("{{repo_root}}", this.docIndexPath);
-
-  replaceDocUrlInIndexTemplateString = (indexTemplateString: string) =>
-    indexTemplateString.replaceAll("{{docs_root}}", this.docIndexPath);
+    readmeString.slice(readmeString.indexOf(README_INSERT_END));
 }
