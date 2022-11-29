@@ -23,7 +23,13 @@ describe("TableOfContents", () => {
         "",
         true
       );
-      const tableOfContents = new TableOfContents(schema, "");
+      const tableOfContents = new TableOfContents(
+        schema,
+        "https://opencaptablecoalition.com/INDEX.md",
+        "/docs",
+        "",
+        true
+      );
 
       const actual = tableOfContents.markdown();
 
@@ -80,7 +86,10 @@ _Used for object property composition and enforcing uniform properties across pa
       );
       const tableOfContents = new TableOfContents(
         schema,
-        "https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF"
+        "https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/README",
+        "https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/docs",
+        "https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF",
+        false
       );
 
       const actual = tableOfContents.markdown();

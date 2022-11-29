@@ -11,21 +11,46 @@ const README_INSERT_END = "## Developer Information";
  * into the project's README.
  */
 export default class TableOfContents {
-  static write = (schema: Schema, readmePath: string, repoUrlRoot: string) => {
-    const tableOfContents = new TableOfContents(schema, repoUrlRoot);
+  static write = (
+    schema: Schema,
+    readmePath: string,
+    docIndexPath: string,
+    docsUrlRoot: string,
+    repoUrlRoot: string,
+    addFileExtension: boolean
+  ) => {
+    const tableOfContents = new TableOfContents(
+      schema,
+      docIndexPath,
+      docsUrlRoot,
+      repoUrlRoot,
+      addFileExtension
+    );
     const readmeString = fse.readFileSync(readmePath).toString();
     return fse.writeFile(
       readmePath,
-      tableOfContents.replaceTocInReadmeString(readmeString)
+      tableOfContents.replaceTocInIndexTemplateString(readmeString)
     );
   };
 
   protected readonly schema: Schema;
   protected readonly repoUrlRoot: string;
+  protected readonly docIndexPath: string;
+  protected readonly docsUrlRoot: string;
+  protected readonly addFileExtension: boolean;
 
-  constructor(schema: Schema, repoUrlRoot: string) {
+  constructor(
+    schema: Schema,
+    docIndexPath: string,
+    docsUrlRoot: string,
+    repoUrlRoot: string,
+    addFileExtension: boolean
+  ) {
     this.schema = schema;
     this.repoUrlRoot = repoUrlRoot;
+    this.docIndexPath = docIndexPath;
+    this.docsUrlRoot = docsUrlRoot;
+    this.addFileExtension = addFileExtension;
   }
 
   protected markdownFromSchemaNode = (
@@ -80,8 +105,20 @@ ${this.markdownForSchemaNodesOfParentType("primitives")}
 
 `;
 
-  replaceTocInReadmeString = (readmeString: string) =>
-    readmeString.slice(0, readmeString.indexOf(README_INSERT_START)) +
+  replaceTocInIndexTemplateString = (indexTemplateString: string) =>
+    indexTemplateString.slice(
+      0,
+      indexTemplateString.indexOf(README_INSERT_START)
+    ) +
     this.markdown() +
-    readmeString.slice(readmeString.indexOf(README_INSERT_END));
+    indexTemplateString.slice(indexTemplateString.indexOf(README_INSERT_END));
+
+  replaceHomeInReadmeString = (indexTemplateString: string) =>
+    indexTemplateString.replaceAll("{{docs_index}}", this.docIndexPath);
+
+  replaceRepoUrlInIndexTemplateString = (indexTemplateString: string) =>
+    indexTemplateString.replaceAll("{{repo_root}}", this.docIndexPath);
+
+  replaceDocUrlInIndexTemplateString = (indexTemplateString: string) =>
+    indexTemplateString.replaceAll("{{docs_root}}", this.docIndexPath);
 }

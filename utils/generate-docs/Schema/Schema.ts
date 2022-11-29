@@ -46,7 +46,10 @@ export default class Schema {
     await TableOfContents.write(
       schema,
       path.join(ROOT, "/docs/INDEX.md"),
-      repoUrlRoot ? repoUrlRoot : ""
+      docIndexPath ? docIndexPath : "",
+      docsUrlRoot ? docsUrlRoot : "",
+      repoUrlRoot ? repoUrlRoot : "",
+      Boolean(addFileExtension).valueOf()
     );
   };
 
