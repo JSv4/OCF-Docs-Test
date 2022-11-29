@@ -1,7 +1,6 @@
 site_name: Open CapTable Format Specification
 repo_url: https://github.com/JSv4/OCF-Docs-Test
-site_url: https://jsv4.github.io
-edit_uri: OCF-Docs-Test/
+site_url: https://jsv4.github.io/OCF-Docs-Test
 site_author: Open Cap Table Coalition
 site_description: Official documentation for the Open Cap Format (OCF).
 theme:
@@ -26,6 +25,9 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 plugins:
   - search
+  - schema_reader:
+      include:
+        - "/schema/"
   - awesome-pages:
       collapse_single_pages: true
       strict: false

@@ -1,4 +1,4 @@
-![](https://github.com/gunderson-dettmer/OCF-MD-Generator/blob/master/docs/images/OCF%20Logo.png)
+![](docs/images/OCF%20Logo.png)
 
 # Open Cap Table Format (OCF)
 
@@ -16,22 +16,22 @@ freely available for anyone to use, though changes must be made through the Coal
 
 OCF is a multi-file format designed to make it easy to split, compress or stream company capitalization tables.
 A valid OCF cap table is made up of JSON objects that match the schemas available in our repo in
-the [Schemas folder](/README.md/schema).
+the [Schemas folder](/schema).
 
-OCF objects are grouped and stored in eight file types (defined in our [file schemas folder](/README.md/schema)).
+OCF objects are grouped and stored in eight file types (defined in our [file schemas folder](/schema)).
 
 There are currently 8 file types that make up a cap table:
 
-1. [A Manifest File](/README.md/schema/files/OCFManifestFile.md) - The manifest holds basic issuer information and
+1. [A Manifest File](schema/files/OCFManifestFile) - The manifest holds basic issuer information and
    references to the instances of the other 7 file types needed to represent a company's capitalization history.
-2. [Stakeholders File(s)](/README.md/schema/files/StakeholdersFile.md) - One or more files listing all stakeholders
+2. [Stakeholders File(s)](docs/schema/files/StakeholdersFile) - One or more files listing all stakeholders
    of the Company. Stakeholder types are enumerated in our standard, and we welcome comments on how to categorize
    stakeholders.
-3. [Stock Classes File(s)](/README.md/schema/files/StockClassesFile.md) - One or more files listing all classes /
+3. [Stock Classes File(s)](/docs/schema/files/StockClassesFile) - One or more files listing all classes /
    series of stock issued by the issuer.
 4. [Stock Legend Templates File(s)](/README.md/schema/files/StockLegendTemplatesFile.md) - One or more files storing the
    legends used by the issuer.
-5. [Stock Plans File(s)](/README.md/schema/files/StockPlansFile.md) - One or more files storing the issuer's stock plans
+5. [Stock Plans File(s)](/docs/schema/files/StockPlansFile.md) - One or more files storing the issuer's stock plans
    and related information.
 6. [Transactions File(s)](/README.md/schema/files/TransactionsFile.md) - One or more files storing the transactions for
    the issuers. Any of our [transaction event objects](/schema/objects/transactions) are supported.

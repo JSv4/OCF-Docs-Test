@@ -1,18 +1,14 @@
-![](https://github.com/gunderson-dettmer/OCF-MD-Generator/blob/master/docs/images/OCF%20Logo.png)
+![](docs/images/OCF%20Logo.png)
 
 # Open Cap Table Format (OCF)
 
-Data Schema and Specification for Open Cap Format (OCF) published by the [Open Cap Table Coalition](https://medium.com/@opencaptable).
+Data Schema and Specification for Open Cap Format (OCF) published by the [Open Cap Table Coalition](https://opencaptablecoalition.com). You can also check out some of past announcements related to OCF and the Coalition on our [Medium Page](https://medium.com/@opencaptable).
 
 ## What is OCF?
 
 OCF (or **O**pen **C**ap Table **F**ormat) is a data standard developed by the Open Cap Table Coalition to enable the
 easy and accurate exchange and use of company capitalization information through a standardized format. It is made
-freely available for anyone to use, though changes must be made through the Coalition's [change process](#how-to-contribute).
-
-## Documentation
-
-OCF has extensive, auto-generated documentation available on our [GitHub.io page](https://jsv4.github.io/OCF-Docs-Test/INDEX/). Please go there to view our latest documentation.
+freely available for anyone to use, though changes must be made through the Coalition's [change process](#developer-information).
 
 ## How Does It Work?
 
@@ -22,24 +18,24 @@ OCF is a multi-file format designed to make it easy to split, compress or stream
 A valid OCF cap table is made up of JSON objects that match the schemas available in our repo in
 the [Schemas folder](/schema).
 
-OCF objects are grouped and stored in eight file types (defined in our [file schemas folder](/schema/files)).
+OCF objects are grouped and stored in eight file types (defined in our [file schemas folder](/schema)).
 
 There are currently 8 file types that make up a cap table:
 
-1. [A Manifest File](/docs/schema/files/OCFManifestFile.md) - The manifest holds basic issuer information and
+1. [A Manifest File](schema/files/OCFManifestFile) - The manifest holds basic issuer information and
    references to the instances of the other 7 file types needed to represent a company's capitalization history.
-2. [Stakeholders File(s)](/docs/schema/files/StakeholdersFile.md) - One or more files listing all stakeholders
+2. [Stakeholders File(s)](docs/schema/files/StakeholdersFile) - One or more files listing all stakeholders
    of the Company. Stakeholder types are enumerated in our standard, and we welcome comments on how to categorize
    stakeholders.
-3. [Stock Classes File(s)](/docs/schema/files/StockClassesFile.md) - One or more files listing all classes /
+3. [Stock Classes File(s)](/docs/schema/files/StockClassesFile) - One or more files listing all classes /
    series of stock issued by the issuer.
-4. [Stock Legend Templates File(s)](/docs/schema/files/StockLegendTemplatesFile.md) - One or more files storing the
+4. [Stock Legend Templates File(s)](/README.md/schema/files/StockLegendTemplatesFile.md) - One or more files storing the
    legends used by the issuer.
 5. [Stock Plans File(s)](/docs/schema/files/StockPlansFile.md) - One or more files storing the issuer's stock plans
    and related information.
-6. [Transactions File(s)](/docs/schema/files/TransactionsFile.md) - One or more files storing the transactions for
+6. [Transactions File(s)](/README.md/schema/files/TransactionsFile.md) - One or more files storing the transactions for
    the issuers. Any of our [transaction event objects](/schema/objects/transactions) are supported.
-7. [Valuations File(s)](/docs/schema/files/ValuationsFile.md) - One or more files storing valuations for the issuer.
+7. [Valuations File(s)](/README.md/schema/files/ValuationsFile.md) - One or more files storing valuations for the issuer.
 8. [Vesting Schedules File(s)](/docs/schema/files/VestingSchedulesFile.md) - One or more files storing vesting
    schedules used by the issuer.
 

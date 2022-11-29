@@ -29,13 +29,7 @@ export default class TableOfContents {
     const readmeString = fse.readFileSync(readmePath).toString();
     return fse.writeFile(
       readmePath,
-      tableOfContents.replaceTocInIndexTemplateString(
-        tableOfContents.replaceRepoUrlInIndexTemplateString(
-          tableOfContents.replaceDocUrlInIndexTemplateString(
-            tableOfContents.replaceHomeInReadmeString(readmeString)
-          )
-        )
-      )
+      tableOfContents.replaceTocInIndexTemplateString(readmeString)
     );
   };
 
