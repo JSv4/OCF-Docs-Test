@@ -34,8 +34,5 @@ jobs:
       - name: Generate documentation
         run: npm run generate-pretty-docs
 
-      - name: Build MkDocs Site
-        run: mkdocs build
-
       - name: Deploy documentation to github pages
         run: mkdocs gh-deploy --force
