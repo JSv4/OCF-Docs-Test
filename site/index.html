@@ -3041,9 +3041,9 @@ the <a href="/schema">Schemas folder</a>.</p>
 <p>OCF objects are grouped and stored in eight file types (defined in our <a href="/schema">file schemas folder</a>).</p>
 <p>There are currently 8 file types that make up a cap table:</p>
 <ol>
-<li><a href="/schema/files/OCFManifestFile">A Manifest File</a> - The manifest holds basic issuer information and
+<li><a href="schema/files/OCFManifestFile/">A Manifest File</a> - The manifest holds basic issuer information and
    references to the instances of the other 7 file types needed to represent a company's capitalization history.</li>
-<li><a href="/schema/files/StakeholdersFile">Stakeholders File(s)</a> - One or more files listing all stakeholders
+<li><a href="schema/files/StakeholdersFile">Stakeholders File(s)</a> - One or more files listing all stakeholders
    of the Company. Stakeholder types are enumerated in our standard, and we welcome comments on how to categorize
    stakeholders.</li>
 <li><a href="/schema/files/StockClassesFile">Stock Classes File(s)</a> - One or more files listing all classes /
@@ -3080,9 +3080,9 @@ see a full list of event transactions supported in our <a href="/schema/objects/
 </ol>
 <p>We use the same design patterns for convertible stock (e.g. preferred stock converting into common), warrants (which don't "convert" but can be "exercised") and convertible securities (e.g. notes).</p>
 <p>Let's illustrate the design pattern using a convertible note as an example:</p>
-<p><img alt="" src="docs/images/OCF%20Conversion%20Diagram.png" /></p>
+<p><img alt="" src="images/OCF%20Conversion%20Diagram.png" /></p>
 <p>And here's what some sample data looks like in practice:</p>
-<p><img alt="" src="docs/images/OCF%20Conversion%20Example.png" /></p>
+<p><img alt="" src="images/OCF%20Conversion%20Example.png" /></p>
 <h3 id="vesting">Vesting</h3>
 <p>Our vesting data model supports arbitrarily-complex trees of dependent vesting conditions that can mix time-based and event-based vesting (e.g. vesting over time and "milestone" vesting, in any execution order with any desired dependencies). We are working on more comprehensive documentation for these concepts. In the meantime, please review the <a href="/docs/schema/objects/VestingTerms.schema.json">vesting terms object</a> (essentially a "vesting schedule"). the vesting OCF Types in <a href="/docs/schema/types/vesting/">/schema/types/vesting</a>, and the vesting events in <a href="/docs/schema/objects/transactions/vesting/">/schema/objects/transactions/vesting</a> (which are used to indicate when a given vesting schedule starts for a given security and when a milestone-based condition is satisfied).</p>
 <p>You can see example vesting schedules in our samples folder in the <a href="/samples/VestingTerms.ocf.json">VestingTerms.ocf.json</a> file.</p>

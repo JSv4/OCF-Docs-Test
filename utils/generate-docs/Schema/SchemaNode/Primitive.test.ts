@@ -22,7 +22,7 @@ describe("Primitive", () => {
       const schema = new Schema([FIXTURE]);
       const actual = new Primitive(schema, FIXTURE).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/README.md)
 
 ---
 

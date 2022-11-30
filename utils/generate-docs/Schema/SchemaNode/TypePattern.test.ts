@@ -16,7 +16,7 @@ describe("TypePattern", () => {
       const schema = new Schema([FIXTURE]);
       const actual = new TypePattern(schema, FIXTURE).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/README.md)
 
 ---
 

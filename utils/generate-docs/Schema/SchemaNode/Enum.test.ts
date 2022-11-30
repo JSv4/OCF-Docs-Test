@@ -26,7 +26,7 @@ describe("Enum", () => {
       const schema = new Schema([SCHEMA_NODE_FIXTURE]);
       const actual = new Enum(schema, SCHEMA_NODE_FIXTURE).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/README.md)
 
 ---
 

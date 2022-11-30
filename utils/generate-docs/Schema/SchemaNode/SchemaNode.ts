@@ -100,7 +100,7 @@ export default abstract class SchemaNode {
     ...this.allOf().flatMap((schemaNode) => schemaNode.required()),
   ];
 
-  markdownHeader = () => `:house: [Documentation Home](/README.md)
+  markdownHeader = () => `:house: [Documentation Home](/docs/README.md)
 
 ---
 

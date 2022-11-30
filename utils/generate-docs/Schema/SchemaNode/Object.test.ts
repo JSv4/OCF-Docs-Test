@@ -81,7 +81,7 @@ describe("Object", () => {
         OBJECT_SCHEMA_NODE_FIXTURE
       ).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/README.md)
 
 ---
 

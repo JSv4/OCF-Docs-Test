@@ -22,7 +22,7 @@ describe("TypeObject", () => {
       const schema = new Schema([FIXTURE]);
       const actual = new TypeObject(schema, FIXTURE).markdownOutput();
 
-      expect(actual).toEqual(`:house: [Documentation Home](/README.md)
+      expect(actual).toEqual(`:house: [Documentation Home](/docs/README.md)
 
 ---
 
