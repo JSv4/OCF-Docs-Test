@@ -21,6 +21,6 @@
 | file_type | **Constant:** `OCF_STOCK_LEGEND_TEMPLATES_FILE`</br>_Defined in [schema/enums/FileType](/docs/schema/enums/FileType.md)_ | Object type field                         | `REQUIRED` |
 | items     | [ [schema/objects/StockLegendTemplate](/docs/schema/objects/StockLegendTemplate.md) ]                                    | List of OCF stock legend template objects | `REQUIRED` |
 
-**Source Code:** [schema/files/StockLegendTemplatesFile](../../schema/files/StockLegendTemplatesFile.schema.json)
+**Source Code:** [schema/files/StockLegendTemplatesFile](../../../schema/files/StockLegendTemplatesFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

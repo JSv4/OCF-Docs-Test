@@ -31,7 +31,7 @@
 | consideration_text  | `STRING`                                                                                                         | Unstructured text description of consideration provided in exchange for security repurchase                                                                                                                                                                                                                                                                                                                                                                                                                 | -          |
 | balance_security_id | `STRING`                                                                                                         | Identifier for the security that holds the remainder balance (for partial repurchases)                                                                                                                                                                                                                                                                                                                                                                                                                      | -          |
 
-**Source Code:** [schema/objects/transactions/repurchase/StockRepurchase](../../../../schema/objects/transactions/repurchase/StockRepurchase.schema.json)
+**Source Code:** [schema/objects/transactions/repurchase/StockRepurchase](../../../../../schema/objects/transactions/repurchase/StockRepurchase.schema.json)
 
 **Examples:**
 

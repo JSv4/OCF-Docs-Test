@@ -16,6 +16,6 @@ _Describes a vesting condition satisfied when a particular unscheduled event occ
 | -------- | ----------------------------- | --------------- | ---------- |
 | type     | **Constant:** `VESTING_EVENT` | Scalar Constant | `REQUIRED` |
 
-**Source Code:** [schema/types/vesting/VestingEventTrigger](../../../schema/types/vesting/VestingEventTrigger.schema.json)
+**Source Code:** [schema/types/vesting/VestingEventTrigger](../../../../schema/types/vesting/VestingEventTrigger.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

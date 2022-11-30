@@ -40,7 +40,7 @@
 | expiration_date              | **ONE OF the Following Types/Objs:**</br>&bull; `NULL` _()_</br>&bull; [schema/types/Date](/docs/schema/types/Date.md)                             | Expiration date of the plan security                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | `REQUIRED` |
 | termination_exercise_windows | [ [schema/types/TerminationWindow](/docs/schema/types/TerminationWindow.md) ]                                                                      | Exercise periods applicable to plan security after a termination for a given, enumerated reason                                                                                                                                                                                                                                                                                                                                                                                                             | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/issuance/PlanSecurityIssuance](../../../../schema/objects/transactions/issuance/PlanSecurityIssuance.schema.json)
+**Source Code:** [schema/objects/transactions/issuance/PlanSecurityIssuance](../../../../../schema/objects/transactions/issuance/PlanSecurityIssuance.schema.json)
 
 **Examples:**
 

@@ -24,7 +24,7 @@
 | name        | `STRING`                                                                                                           | Name for the stock legend template                              | `REQUIRED` |
 | text        | `STRING`                                                                                                           | The full text of the stock legend                               | `REQUIRED` |
 
-**Source Code:** [schema/objects/StockLegendTemplate](../../schema/objects/StockLegendTemplate.schema.json)
+**Source Code:** [schema/objects/StockLegendTemplate](../../../schema/objects/StockLegendTemplate.schema.json)
 
 **Examples:**
 

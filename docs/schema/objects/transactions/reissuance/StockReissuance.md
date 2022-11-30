@@ -30,7 +30,7 @@
 | split_transaction_id   | `STRING`                                                                                                         | When stock is reissued as a result of a stock split, this field contains id of the respective stock class split transaction. It is not set otherwise.                                                                                                                                                                                                                                                                                                                                                       | -          |
 | reason_text            | `STRING`                                                                                                         | Free-form human-readable reason for stock reissuance                                                                                                                                                                                                                                                                                                                                                                                                                                                        | -          |
 
-**Source Code:** [schema/objects/transactions/reissuance/StockReissuance](../../../../schema/objects/transactions/reissuance/StockReissuance.schema.json)
+**Source Code:** [schema/objects/transactions/reissuance/StockReissuance](../../../../../schema/objects/transactions/reissuance/StockReissuance.schema.json)
 
 **Examples:**
 

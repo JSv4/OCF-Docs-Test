@@ -21,6 +21,6 @@
 | file_type | **Constant:** `OCF_STOCK_PLANS_FILE`</br>_Defined in [schema/enums/FileType](/docs/schema/enums/FileType.md)_ | Object type field              | `REQUIRED` |
 | items     | [ [schema/objects/StockPlan](/docs/schema/objects/StockPlan.md) ]                                             | List of OCF stock plan objects | `REQUIRED` |
 
-**Source Code:** [schema/files/StockPlansFile](../../schema/files/StockPlansFile.schema.json)
+**Source Code:** [schema/files/StockPlansFile](../../../schema/files/StockPlansFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

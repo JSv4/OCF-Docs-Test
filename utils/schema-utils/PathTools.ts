@@ -54,7 +54,7 @@ export const schemaPathRelativeToSchemaDir = (schema_path: string) =>
  *          required for MkDoc-style markdown docs.
  */
 export const relativeSchemaPathToRepoRoot = (schema_path: string) =>
-  schema_path.replaceAll(new RegExp("[^/\\\\]+", "g"), "..");
+  "../" + schema_path.replaceAll(new RegExp("[^/\\\\]+", "g"), "..");
 
 /**
  * Given the local path to the schema, return the schema path relative to the repo root.

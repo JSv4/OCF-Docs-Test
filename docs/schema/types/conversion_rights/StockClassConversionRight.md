@@ -19,6 +19,6 @@ _Type representation of a conversion right from one Stock Class into another Sto
 | converts_to_future_round   | `BOOLEAN`                                                                                                                                                                           | Is this stock class potentially convertible into a future, as-yet undetermined stock class (e.g. Founder Preferred) | -          |
 | converts_to_stock_class_id | `STRING`                                                                                                                                                                            | The identifier of the existing, known stock class this stock class can convert into                                 | -          |
 
-**Source Code:** [schema/types/conversion_rights/StockClassConversionRight](../../../schema/types/conversion_rights/StockClassConversionRight.schema.json)
+**Source Code:** [schema/types/conversion_rights/StockClassConversionRight](../../../../schema/types/conversion_rights/StockClassConversionRight.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

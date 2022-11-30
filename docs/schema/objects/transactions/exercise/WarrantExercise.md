@@ -30,7 +30,7 @@
 | resulting_security_ids | [`STRING`]                                                                                                       | Identifier for the security (or securities) that resulted from the exercise                                                                                                                                                                                                                                                                                                                                                                                                                                 | `REQUIRED` |
 | trigger_id             | `STRING`                                                                                                         | What is the id of the warrant's exercise trigger that resulted in this exercise                                                                                                                                                                                                                                                                                                                                                                                                                             | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/exercise/WarrantExercise](../../../../schema/objects/transactions/exercise/WarrantExercise.schema.json)
+**Source Code:** [schema/objects/transactions/exercise/WarrantExercise](../../../../../schema/objects/transactions/exercise/WarrantExercise.schema.json)
 
 **Examples:**
 

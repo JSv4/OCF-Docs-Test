@@ -21,6 +21,6 @@
 | file_type | **Constant:** `OCF_VESTING_TERMS_FILE`</br>_Defined in [schema/enums/FileType](/docs/schema/enums/FileType.md)_ | Object type field                 | `REQUIRED` |
 | items     | [ [schema/objects/VestingTerms](/docs/schema/objects/VestingTerms.md) ]                                         | List of OCF vesting terms objects | `REQUIRED` |
 
-**Source Code:** [schema/files/VestingTermsFile](../../schema/files/VestingTermsFile.schema.json)
+**Source Code:** [schema/files/VestingTermsFile](../../../schema/files/VestingTermsFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

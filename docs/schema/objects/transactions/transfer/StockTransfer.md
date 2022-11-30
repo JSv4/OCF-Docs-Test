@@ -31,7 +31,7 @@
 | resulting_security_ids | [`STRING`]                                                                                                     | Array of identifiers for new security (or securities) created as a result of the transaction                                                                                                                                                                                                                                                                                                                                                                                                                | `REQUIRED` |
 | quantity               | [schema/types/Numeric](/docs/schema/types/Numeric.md)                                                          | Quantity of non-monetary security units transferred                                                                                                                                                                                                                                                                                                                                                                                                                                                         | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/transfer/StockTransfer](../../../../schema/objects/transactions/transfer/StockTransfer.schema.json)
+**Source Code:** [schema/objects/transactions/transfer/StockTransfer](../../../../../schema/objects/transactions/transfer/StockTransfer.schema.json)
 
 **Examples:**
 

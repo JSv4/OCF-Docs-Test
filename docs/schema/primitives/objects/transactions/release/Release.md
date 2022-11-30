@@ -20,6 +20,6 @@
 | consideration_text     | `STRING`                                                | Unstructured text description of consideration provided in exchange for security release     | -          |
 | resulting_security_ids | [`STRING`]                                              | Identifier of the new security (or securities) issuance resulting from a release transaction | `REQUIRED` |
 
-**Source Code:** [schema/primitives/objects/transactions/release/Release](../../../../../schema/primitives/objects/transactions/release/Release.schema.json)
+**Source Code:** [schema/primitives/objects/transactions/release/Release](../../../../../../schema/primitives/objects/transactions/release/Release.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.
