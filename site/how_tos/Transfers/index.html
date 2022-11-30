@@ -3027,8 +3027,8 @@
 
 
 <p><img alt="🏠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3e0.svg" title=":house:" /> <a href="/docs/README.md">Documentation Home</a></p>
-<h1 id="ocf-transfers">OCF Transfers</h1>
-<h2 id="overview">Overview</h2>
+<h1 id="ocf-transfers">OCF Transfers<a class="headerlink" href="#ocf-transfers" title="Permanent link">#</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
 <p>Most likely, if you are modeling a real company's capitalization, someone is going to eventually want to transfer a security between one or more stakeholders. In order to achieve this, you're going to need to use one of the <a href="../schema/objects/transactions/transfer">transfer events</a>.</p>
 <p>Each of our four, core security types has its own transfer event:</p>
 <ol>
@@ -3060,8 +3060,8 @@ shares to Alice, if you look at the transfer schema, you'll probably notice a pr
 <p>You'll notice that not only does the transaction object have a source <code>security_id</code>, there is also a field for <code>resulting_security_ids</code>. This should point to the <strong>issuance(s)</strong> that result from this transfer. So, in fact, to model a simple transfer from Bob to Alice, you need <strong>two</strong> events - a <a href="../../schema/objects/transactions/issuance/StockIssuance/">StockIssuance</a> to Alice <strong>and</strong> the transfer linking Bob's stock to Alice's.</p>
 <p>If Bob has any remaining shares following the issuance, his remaining shares get a new security_id via another issuance event and the transfer's <code>balance_security_id</code> should point to that new security_id. If Bob transfers all of his shares, nothing further is required. Anyone traversing the events should be able to see that Bob's stock was transfered in its entirety to the security_ids in <code>resulting_security_ids</code> on the transfer.</p>
 <p>Let's walk through it in depth.</p>
-<h2 id="walkthrough">Walkthrough</h2>
-<h3 id="stock-transfer">Stock Transfer</h3>
+<h2 id="walkthrough">Walkthrough<a class="headerlink" href="#walkthrough" title="Permanent link">#</a></h2>
+<h3 id="stock-transfer">Stock Transfer<a class="headerlink" href="#stock-transfer" title="Permanent link">#</a></h3>
 <p>We a company with a StockClass with ID <code>SeriesA</code> and a name of <code>Series A Preferred Stock</code>.</p>
 <ol>
 <li>The Company wants to issue 1,000 shares of Series A Preferred Stock to Bob Immaperson. To do this, create a <a href="../../schema/objects/transactions/issuance/StockIssuance/">StockIssuance</a> event in your OCF event stack:</li>
