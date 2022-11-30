@@ -32,7 +32,7 @@ jobs:
         run: npm install
 
       - name: Generate documentation
-        run: npm run generate-pretty-docs
+        run: npm run generate-docs
 
       - name: Deploy documentation to github pages
         run: mkdocs gh-deploy --force

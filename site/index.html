@@ -3026,7 +3026,7 @@
   </a>
 
 
-<p><img alt="" src="docs/images/OCF%20Logo.png" /></p>
+<p><img alt="" src="images/OCF%20Logo.png" /></p>
 <h1 id="open-cap-table-format-ocf">Open Cap Table Format (OCF)</h1>
 <p>Data Schema and Specification for Open Cap Format (OCF) published by the <a href="https://opencaptablecoalition.com">Open Cap Table Coalition</a>. You can also check out some of past announcements related to OCF and the Coalition on our <a href="https://medium.com/@opencaptable">Medium Page</a>.</p>
 <h2 id="what-is-ocf">What is OCF?</h2>
@@ -3041,25 +3041,25 @@ the <a href="/schema">Schemas folder</a>.</p>
 <p>OCF objects are grouped and stored in eight file types (defined in our <a href="/schema">file schemas folder</a>).</p>
 <p>There are currently 8 file types that make up a cap table:</p>
 <ol>
-<li><a href="schema/files/OCFManifestFile">A Manifest File</a> - The manifest holds basic issuer information and
+<li><a href="/schema/files/OCFManifestFile">A Manifest File</a> - The manifest holds basic issuer information and
    references to the instances of the other 7 file types needed to represent a company's capitalization history.</li>
-<li><a href="docs/schema/files/StakeholdersFile">Stakeholders File(s)</a> - One or more files listing all stakeholders
+<li><a href="/schema/files/StakeholdersFile">Stakeholders File(s)</a> - One or more files listing all stakeholders
    of the Company. Stakeholder types are enumerated in our standard, and we welcome comments on how to categorize
    stakeholders.</li>
-<li><a href="docs/schema/files/StockClassesFile">Stock Classes File(s)</a> - One or more files listing all classes /
+<li><a href="/schema/files/StockClassesFile">Stock Classes File(s)</a> - One or more files listing all classes /
    series of stock issued by the issuer.</li>
-<li><a href="docs/schema/files/StockLegendTemplatesFile.md">Stock Legend Templates File(s)</a> - One or more files storing the
+<li><a href="/schema/files/StockLegendTemplatesFile.md">Stock Legend Templates File(s)</a> - One or more files storing the
    legends used by the issuer.</li>
-<li><a href="docs/schema/files/StockPlansFile.md">Stock Plans File(s)</a> - One or more files storing the issuer's stock plans
+<li><a href="/schema/files/StockPlansFile.md">Stock Plans File(s)</a> - One or more files storing the issuer's stock plans
    and related information.</li>
-<li><a href="docs/schema/files/TransactionsFile.md">Transactions File(s)</a> - One or more files storing the transactions for
+<li><a href="/schema/files/TransactionsFile.md">Transactions File(s)</a> - One or more files storing the transactions for
    the issuers. Any of our <a href="/schema/objects/transactions">transaction event objects</a> are supported.</li>
-<li><a href="docs/schema/files/ValuationsFile.md">Valuations File(s)</a> - One or more files storing valuations for the issuer.</li>
-<li><a href="/docs/schema/files/VestingSchedulesFile.md">Vesting Schedules File(s)</a> - One or more files storing vesting
+<li><a href="/schema/files/ValuationsFile.md">Valuations File(s)</a> - One or more files storing valuations for the issuer.</li>
+<li><a href="/schema/files/VestingSchedulesFile.md">Vesting Schedules File(s)</a> - One or more files storing vesting
    schedules used by the issuer.</li>
 </ol>
 <p><strong>At the moment, we recommend combining all of these files into a single compressed file with a *.ocf.zip extension:</strong></p>
-<p><img alt="" src="docs/images/OCF%20Container.png" /></p>
+<p><img alt="" src="/images/OCF%20Container.png" /></p>
 <p>We are working on sample tooling to interact with compressed *.ocf.zip files.</p>
 <p><strong>You can also break out the various OCF Types and OCF Objects and make those available separately via API or other, suitable mechanism. The key part of OCF is the data structure, not the container itself, though, to ensure complete cap table integrity, a full cap table export is recommended.</strong></p>
 <h3 id="event-driven-architecture">Event-Driven Architecture</h3>

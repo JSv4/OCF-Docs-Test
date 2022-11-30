@@ -34,7 +34,7 @@ export default class Schema {
       supplementalMarkdowns
     );
     await SchemaWriter.write(path.join(ROOT), schema);
-    await TableOfContents.write(schema, path.join(ROOT, "README.md"));
+    await TableOfContents.write(schema, path.join(ROOT, "docs", "README.md"));
   };
 
   readonly schemaNodes: SchemaNode[];
