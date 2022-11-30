@@ -22,9 +22,9 @@ OCF objects are grouped and stored in eight file types (defined in our [file sch
 
 There are currently 8 file types that make up a cap table:
 
-1. [A Manifest File](/docs/schema/files/OCFManifestFile.md) - The manifest holds basic issuer information and
+1. [A Manifest File](./schema/files/OCFManifestFile.md) - The manifest holds basic issuer information and
    references to the instances of the other 7 file types needed to represent a company's capitalization history.
-2. [Stakeholders File(s)](/docs/schema/files/StakeholdersFile.md) - One or more files listing all stakeholders
+2. [Stakeholders File(s)](./schema/files/StakeholdersFile.md) - One or more files listing all stakeholders
    of the Company. Stakeholder types are enumerated in our standard, and we welcome comments on how to categorize
    stakeholders.
 3. [Stock Classes File(s)](/docs/schema/files/StockClassesFile.md) - One or more files listing all classes /
