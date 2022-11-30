@@ -37,3 +37,6 @@ plugins:
   - awesome-pages:
       collapse_single_pages: true
       strict: false
+  - mkdocs-simple-hooks:
+      hooks:
+        on_files: "docs.hooks:copy_schemas"
