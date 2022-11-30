@@ -27,7 +27,7 @@
 | current_shares_reserved   | [schema/types/Numeric](/docs/schema/types/Numeric.md)                                                   | The most recent number of shares reserved in the pool for this stock plan by the Board or equivalent body. Actual shares issued and outstanding from the pool should be determined by traversing the event stack. The plan's reserved share history (e.g. previous `current_shares_reserved` amounts) is not available in OCF version 1. | `REQUIRED` |
 | stock_class_id            | `STRING`                                                                                                | Identifier of the StockClass object this plan is composed of                                                                                                                                                                                                                                                                             | `REQUIRED` |
 
-**Source Code:** [schema/objects/StockPlan](/schema/objects/StockPlan.schema.json)
+**Source Code:** [schema/objects/StockPlan](../../schema/objects/StockPlan.schema.json)
 
 **Examples:**
 

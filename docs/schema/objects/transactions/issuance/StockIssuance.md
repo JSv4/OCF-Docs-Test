@@ -38,7 +38,7 @@
 | cost_basis              | **ONE OF the Following Types/Objs:**</br>&bull; [schema/types/Monetary](/docs/schema/types/Monetary.md)</br>&bull; [schema/types/PreReleaseOmission](/docs/schema/types/PreReleaseOmission.md) | The cost basis for this particular stock                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | `REQUIRED` |
 | stock_legend_ids        | [`STRING`]                                                                                                                                                                                     | List of stock legend ids that apply to this stock                                                                                                                                                                                                                                                                                                                                                                                                                                                           | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/issuance/StockIssuance](/schema/objects/transactions/issuance/StockIssuance.schema.json)
+**Source Code:** [schema/objects/transactions/issuance/StockIssuance](../../../../schema/objects/transactions/issuance/StockIssuance.schema.json)
 
 **Examples:**
 

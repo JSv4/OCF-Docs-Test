@@ -12,6 +12,6 @@
 
 **Value:** `STRING` - _Must Match Regex Pattern: `^[+-]?[0-9]+(\.[0-9]{1,10})?$`_
 
-**Source Code:** [schema/types/Numeric](/schema/types/Numeric.schema.json)
+**Source Code:** [schema/types/Numeric](../../schema/types/Numeric.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

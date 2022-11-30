@@ -1,4 +1,8 @@
 import path from "node:path";
+import {
+  relativeSchemaPathToRepoRoot,
+  schemaPathRelativeToRepoRoot,
+} from "../../../schema-utils/PathTools.js";
 import { markdownTable } from "markdown-table";
 import { format } from "date-fns";
 
@@ -81,7 +85,17 @@ export default abstract class SchemaNode {
 
   description = () => this.json["description"];
 
-  sourcePath = () => `/${this.shortId()}.schema.json`;
+  sourcePath = () => {
+    console.log(`Dir for id ${this.id()}: ${this.directory()} `);
+    console.log(
+      `\tRelative path to root: ${relativeSchemaPathToRepoRoot(
+        this.directory()
+      )}`
+    );
+    return `${relativeSchemaPathToRepoRoot(
+      this.directory()
+    )}/${this.shortId()}.schema.json`;
+  };
 
   outputPath = () => `/docs/${this.shortId()}.md`;
 

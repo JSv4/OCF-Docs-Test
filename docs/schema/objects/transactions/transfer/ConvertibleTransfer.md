@@ -31,7 +31,7 @@
 | resulting_security_ids | [`STRING`]                                                                                                           | Array of identifiers for new security (or securities) created as a result of the transaction                                                                                                                                                                                                                                                                                                                                                                                                                | `REQUIRED` |
 | amount                 | [schema/types/Monetary](/docs/schema/types/Monetary.md)                                                              | Amount of monetary value transferred                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/transfer/ConvertibleTransfer](/schema/objects/transactions/transfer/ConvertibleTransfer.schema.json)
+**Source Code:** [schema/objects/transactions/transfer/ConvertibleTransfer](../../../../schema/objects/transactions/transfer/ConvertibleTransfer.schema.json)
 
 **Examples:**
 

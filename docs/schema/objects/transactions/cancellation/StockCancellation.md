@@ -30,7 +30,7 @@
 | reason_text         | `STRING`                                                                                                           | Reason for the cancellation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | `REQUIRED` |
 | quantity            | [schema/types/Numeric](/docs/schema/types/Numeric.md)                                                              | Quantity of non-monetary security units cancelled                                                                                                                                                                                                                                                                                                                                                                                                                                                           | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/cancellation/StockCancellation](/schema/objects/transactions/cancellation/StockCancellation.schema.json)
+**Source Code:** [schema/objects/transactions/cancellation/StockCancellation](../../../../schema/objects/transactions/cancellation/StockCancellation.schema.json)
 
 **Examples:**
 

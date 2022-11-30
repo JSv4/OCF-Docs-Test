@@ -46,6 +46,17 @@ export const schemaPathRelativeToSchemaDir = (schema_path: string) =>
   );
 
 /**
+ * MkDocs only supports using relative paths from the current MD file to the repo root. E.g. If you're lookin at a file in /schema/enums/, and you
+ * want to navigate back to README.md in the root, you can't use /README.md, you need to use ../../README.md or else MkDocs will not
+ * generate the right paths in the resulting html. GitHub appears to be able to handle both, so using this won't affect compatibility with GitHub.
+ * @param schema_path String -> Local path to the schema
+ * @returns String -> Path back to repo root in **relative** format - e.g. ../../ not /schema/enums. This is
+ *          required for MkDoc-style markdown docs.
+ */
+export const relativeSchemaPathToRepoRoot = (schema_path: string) =>
+  schema_path.replaceAll(new RegExp("[^/\\\\]+", "g"), "..");
+
+/**
  * Given the local path to the schema, return the schema path relative to the repo root.
  * @param schema_path String -> Local path to the schema
  * @returns String -> The relative path of schema_path to the repo root dir

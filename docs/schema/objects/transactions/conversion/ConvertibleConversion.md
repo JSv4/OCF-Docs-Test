@@ -33,7 +33,7 @@
 | trigger_id                | `STRING`                                                                                                               | What is the id of the convertible's conversion trigger that resulted in this conversion                                                                                                                                                                                                                                                                                                                                                                                                                     | `REQUIRED` |
 | capitalization_definition | [schema/types/CapitalizationDefinition](/docs/schema/types/CapitalizationDefinition.md)                                | If this conversion event was d on the company's capitalization as calculated at the time of conversion, please specify what stock classes, stock plans and securities were included in the calculation                                                                                                                                                                                                                                                                                                      | -          |
 
-**Source Code:** [schema/objects/transactions/conversion/ConvertibleConversion](/schema/objects/transactions/conversion/ConvertibleConversion.schema.json)
+**Source Code:** [schema/objects/transactions/conversion/ConvertibleConversion](../../../../schema/objects/transactions/conversion/ConvertibleConversion.schema.json)
 
 **Examples:**
 

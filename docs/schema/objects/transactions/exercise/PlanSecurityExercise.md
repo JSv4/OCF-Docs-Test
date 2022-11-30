@@ -30,7 +30,7 @@
 | resulting_security_ids | [`STRING`]                                                                                                             | Identifier for the security (or securities) that resulted from the exercise                                                                                                                                                                                                                                                                                                                                                                                                                                 | `REQUIRED` |
 | quantity               | [schema/types/Numeric](/docs/schema/types/Numeric.md)                                                                  | Quantity of shares exercised                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/exercise/PlanSecurityExercise](/schema/objects/transactions/exercise/PlanSecurityExercise.schema.json)
+**Source Code:** [schema/objects/transactions/exercise/PlanSecurityExercise](../../../../schema/objects/transactions/exercise/PlanSecurityExercise.schema.json)
 
 **Examples:**
 

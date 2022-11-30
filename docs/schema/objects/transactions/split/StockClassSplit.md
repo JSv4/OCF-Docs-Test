@@ -27,7 +27,7 @@
 | stock_class_id | `STRING`                                                                                                          | Identifier of the StockClass object, a subject of this transaction                                             | `REQUIRED` |
 | split_ratio    | [schema/types/Ratio](/docs/schema/types/Ratio.md)                                                                 | Ratio of new shares to old shares. For 2-for-1 split the numerator of the ratio is 2 and the denominator is 1. | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/split/StockClassSplit](/schema/objects/transactions/split/StockClassSplit.schema.json)
+**Source Code:** [schema/objects/transactions/split/StockClassSplit](../../../../schema/objects/transactions/split/StockClassSplit.schema.json)
 
 **Examples:**
 

@@ -30,7 +30,7 @@
 | reason_text         | `STRING`                                                                                                                 | Reason for the cancellation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | `REQUIRED` |
 | amount              | [schema/types/Monetary](/docs/schema/types/Monetary.md)                                                                  | Amount of monetary value cancelled                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/cancellation/ConvertibleCancellation](/schema/objects/transactions/cancellation/ConvertibleCancellation.schema.json)
+**Source Code:** [schema/objects/transactions/cancellation/ConvertibleCancellation](../../../../schema/objects/transactions/cancellation/ConvertibleCancellation.schema.json)
 
 **Examples:**
 

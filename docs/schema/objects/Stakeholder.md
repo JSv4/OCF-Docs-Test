@@ -29,7 +29,7 @@
 | addresses            | [ [schema/types/Address](/docs/schema/types/Address.md) ]                                                                                                                                                                                                                                                                                                                                                                                                   | Addresses for the stakeholder                                                                                                      | -          |
 | tax_ids              | [ [schema/types/TaxID](/docs/schema/types/TaxID.md) ]                                                                                                                                                                                                                                                                                                                                                                                                       | The tax ids for this stakeholder                                                                                                   | -          |
 
-**Source Code:** [schema/objects/Stakeholder](/schema/objects/Stakeholder.schema.json)
+**Source Code:** [schema/objects/Stakeholder](../../schema/objects/Stakeholder.schema.json)
 
 **Examples:**
 

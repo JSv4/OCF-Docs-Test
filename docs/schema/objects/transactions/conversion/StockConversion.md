@@ -30,7 +30,7 @@
 | balance_security_id    | `STRING`                                                                                                         | Identifier for the security that holds the remainder balance (for partial conversions)                                                                                                                                                                                                                                                                                                                                                                                                                      | -          |
 | quantity_converted     | [schema/types/Numeric](/docs/schema/types/Numeric.md)                                                            | Quantity of non-monetary security units converted                                                                                                                                                                                                                                                                                                                                                                                                                                                           | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/conversion/StockConversion](/schema/objects/transactions/conversion/StockConversion.schema.json)
+**Source Code:** [schema/objects/transactions/conversion/StockConversion](../../../../schema/objects/transactions/conversion/StockConversion.schema.json)
 
 **Examples:**
 

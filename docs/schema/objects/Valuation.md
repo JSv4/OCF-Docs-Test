@@ -27,7 +27,7 @@
 | effective_date      | [schema/types/Date](/docs/schema/types/Date.md)                                                                      | Date on which this valuation is first valid                                                                                                         | `REQUIRED` |
 | valuation_type      | `Enum - Valuation Type`</br></br>_Description:_ Enumeration of valuation types</br></br>**ONE OF:** </br>&bull; 409A | Seam for supporting different types of valuations in future versions                                                                                | `REQUIRED` |
 
-**Source Code:** [schema/objects/Valuation](/schema/objects/Valuation.schema.json)
+**Source Code:** [schema/objects/Valuation](../../schema/objects/Valuation.schema.json)
 
 **Examples:**
 

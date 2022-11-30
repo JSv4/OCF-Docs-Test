@@ -32,7 +32,7 @@
 | consideration_text     | `STRING`                                                                                                              | Unstructured text description of consideration provided in exchange for security release                                                                                                                                                                                                                                                                                                                                                                                                                    | -          |
 | resulting_security_ids | [`STRING`]                                                                                                            | Identifier of the new security (or securities) issuance resulting from a release transaction                                                                                                                                                                                                                                                                                                                                                                                                                | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/release/PlanSecurityRelease](/schema/objects/transactions/release/PlanSecurityRelease.schema.json)
+**Source Code:** [schema/objects/transactions/release/PlanSecurityRelease](../../../../schema/objects/transactions/release/PlanSecurityRelease.schema.json)
 
 **Examples:**
 

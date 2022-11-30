@@ -18,6 +18,6 @@ _Sets forth inputs and conversion mechanism of a ratio conversion (primarily use
 | ratio         | [schema/types/Ratio](/docs/schema/types/Ratio.md)                                                                                                          | One share of this stock class converts into this many target stock class shares | `REQUIRED` |
 | rounding_type | `Enum - Rounding Type`</br></br>_Description:_ Enumeration of rounding types</br></br>**ONE OF:** </br>&bull; CEILING </br>&bull; FLOOR </br>&bull; NORMAL | How should fractional shares be rounded?                                        | `REQUIRED` |
 
-**Source Code:** [schema/types/conversion_mechanisms/RatioConversionMechanism](/schema/types/conversion_mechanisms/RatioConversionMechanism.schema.json)
+**Source Code:** [schema/types/conversion_mechanisms/RatioConversionMechanism](../../../schema/types/conversion_mechanisms/RatioConversionMechanism.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.
