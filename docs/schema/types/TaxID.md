@@ -1,4 +1,4 @@
-:house: [Documentation Home](/docs/README.md)
+:house: [Documentation Home](../../../)
 
 ---
 
@@ -12,10 +12,10 @@ _Type representation of a government identifier for tax purposes (e.g. EIN) and 
 
 **Properties:**
 
-| Property | Type                                                          | Description                                                      | Required   |
-| -------- | ------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
-| tax_id   | `STRING`                                                      | Tax identifier as string                                         | `REQUIRED` |
-| country  | [schema/types/CountryCode](/docs/schema/types/CountryCode.md) | Issuing country code (ISO 3166-1 alpha-2) for the tax identifier | `REQUIRED` |
+| Property | Type                                                             | Description                                                      | Required   |
+| -------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| tax_id   | `STRING`                                                         | Tax identifier as string                                         | `REQUIRED` |
+| country  | [schema/types/CountryCode](../../../schema/types/CountryCode.md) | Issuing country code (ISO 3166-1 alpha-2) for the tax identifier | `REQUIRED` |
 
 **Source Code:** [schema/types/TaxID](../../../schema/types/TaxID.schema.json)
 

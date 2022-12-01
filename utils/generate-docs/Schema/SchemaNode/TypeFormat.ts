@@ -19,7 +19,7 @@ export default class TypeFormatSchemaNode extends SchemaNode {
 
   protected format = () => this.json["format"];
 
-  markdownTableType = () => `[${this.shortId()}](${this.outputPath()})`;
+  markdownTableType = () => `[${this.shortId()}](${this.documentationPath()})`;
 
   markdownOutput = () => `${this.markdownHeader()}
 

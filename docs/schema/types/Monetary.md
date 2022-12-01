@@ -1,4 +1,4 @@
-:house: [Documentation Home](/docs/README.md)
+:house: [Documentation Home](../../../)
 
 ---
 
@@ -12,10 +12,10 @@ _Type representation of an amount of money in a specified currency_
 
 **Properties:**
 
-| Property | Type                                                            | Description             | Required   |
-| -------- | --------------------------------------------------------------- | ----------------------- | ---------- |
-| amount   | [schema/types/Numeric](/docs/schema/types/Numeric.md)           | Numeric amount of money | `REQUIRED` |
-| currency | [schema/types/CurrencyCode](/docs/schema/types/CurrencyCode.md) | ISO 4217 currency code  | `REQUIRED` |
+| Property | Type                                                               | Description             | Required   |
+| -------- | ------------------------------------------------------------------ | ----------------------- | ---------- |
+| amount   | [schema/types/Numeric](../../../schema/types/Numeric.md)           | Numeric amount of money | `REQUIRED` |
+| currency | [schema/types/CurrencyCode](../../../schema/types/CurrencyCode.md) | ISO 4217 currency code  | `REQUIRED` |
 
 **Source Code:** [schema/types/Monetary](../../../schema/types/Monetary.schema.json)
 

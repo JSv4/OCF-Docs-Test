@@ -1,4 +1,4 @@
-:house: [Documentation Home](/docs/README.md)
+:house: [Documentation Home](../../../)
 
 ---
 
@@ -12,10 +12,10 @@ _Type representation of a file_
 
 **Properties:**
 
-| Property | Type                                          | Description                               | Required   |
-| -------- | --------------------------------------------- | ----------------------------------------- | ---------- |
-| filepath | `STRING`                                      | Path to the file within the OCF container | `REQUIRED` |
-| md5      | [schema/types/Md5](/docs/schema/types/Md5.md) | MD5 file checksum                         | `REQUIRED` |
+| Property | Type                                             | Description                               | Required   |
+| -------- | ------------------------------------------------ | ----------------------------------------- | ---------- |
+| filepath | `STRING`                                         | Path to the file within the OCF container | `REQUIRED` |
+| md5      | [schema/types/Md5](../../../schema/types/Md5.md) | MD5 file checksum                         | `REQUIRED` |
 
 **Source Code:** [schema/types/File](../../../schema/types/File.schema.json)
 

@@ -31,7 +31,7 @@ describe("SchemaNode", () => {
       const schema = new Schema([FIXTURE]);
       const schemaNode = new DummyNode(schema, FIXTURE);
 
-      const actual = schemaNode.outputPath();
+      const actual = schemaNode.documentationPath();
       expect(actual).toEqual("/docs/schema/files/TestFile.md");
     });
   });

@@ -3071,7 +3071,7 @@
 
   <h1>StockClass</h1>
 
-<p><img alt="🏠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3e0.svg" title=":house:" /> <a href="/docs/README.md">Documentation Home</a></p>
+<p><img alt="🏠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3e0.svg" title=":house:" /> <a href="../../../">Documentation Home</a></p>
 <hr />
 <h3 id="object-stock-class">Object - Stock Class<a class="headerlink" href="#object-stock-class" title="Permanent link">#</a></h3>
 <p><code>https://opencaptablecoalition.com/schema/objects/StockClass.schema.json</code></p>
@@ -3079,7 +3079,7 @@
 <p><strong>Data Type:</strong> <code>OCF Object - STOCK_CLASS</code></p>
 <p><strong>Composed From:</strong></p>
 <ul>
-<li><a href="/docs/schema/primitives/objects/Object.md">schema/primitives/objects/Object</a></li>
+<li><a href="../../../../schema/primitives/objects/Object.md">schema/primitives/objects/Object</a></li>
 </ul>
 <p><strong>Properties:</strong></p>
 <table>
@@ -3106,7 +3106,7 @@
 </tr>
 <tr>
 <td>object_type</td>
-<td><strong>Constant:</strong> <code>STOCK_CLASS</code></br><em>Defined in <a href="/docs/schema/enums/ObjectType.md">schema/enums/ObjectType</a></em></td>
+<td><strong>Constant:</strong> <code>STOCK_CLASS</code></br><em>Defined in <a href="../../../schema/enums/ObjectType.md">schema/enums/ObjectType</a></em></td>
 <td>Object type field</td>
 <td><code>REQUIRED</code></td>
 </tr>
@@ -3130,55 +3130,55 @@
 </tr>
 <tr>
 <td>current_shares_authorized</td>
-<td><a href="/docs/schema/types/Numeric.md">schema/types/Numeric</a></td>
+<td><a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></td>
 <td>The most current number of shares authorized for this stock class</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>board_approval_date</td>
-<td><a href="/docs/schema/types/Date.md">schema/types/Date</a></td>
+<td><a href="../../../schema/types/Date.md">schema/types/Date</a></td>
 <td>Date on which the board approved the stock class</td>
 <td>-</td>
 </tr>
 <tr>
 <td>votes_per_share</td>
-<td><strong>ONE OF the Following Types/Objs:</strong></br>&bull; <a href="/docs/schema/types/Numeric.md">schema/types/Numeric</a></br>&bull; <a href="/docs/schema/types/PreReleaseOmission.md">schema/types/PreReleaseOmission</a></td>
+<td><strong>ONE OF the Following Types/Objs:</strong></br>&bull; <a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></br>&bull; <a href="../../../schema/types/PreReleaseOmission.md">schema/types/PreReleaseOmission</a></td>
 <td>The number of votes each share of this stock class gets</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>par_value</td>
-<td><a href="/docs/schema/types/Monetary.md">schema/types/Monetary</a></td>
+<td><a href="../../../schema/types/Monetary.md">schema/types/Monetary</a></td>
 <td>Per-share par value of this stock class</td>
 <td>-</td>
 </tr>
 <tr>
 <td>price_per_share</td>
-<td><a href="/docs/schema/types/Monetary.md">schema/types/Monetary</a></td>
+<td><a href="../../../schema/types/Monetary.md">schema/types/Monetary</a></td>
 <td>Per-share price this stock class was issued for</td>
 <td>-</td>
 </tr>
 <tr>
 <td>seniority</td>
-<td><a href="/docs/schema/types/Numeric.md">schema/types/Numeric</a></td>
+<td><a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></td>
 <td>Seniority of the stock - determines repayment priority. Seniority is ordered by increasing number so that stock classes with a higher seniority have higher repayment priority. The following properties hold for all stock classes for a given company: </br>a) transitivity: stock classes are absolutely stackable by seniority and in increasing numerical order, </br>b) non-uniqueness: multiple stock classes can have the same Seniority number and therefore have the same liquidation/repayment order.</br>In practice, stock classes with same seniority may be created at different points in time and (for example, an extension of an existing preferred financing round), and also a new stock class can be created with seniority between two existing stock classes, in which case it is assigned some decimal number between the numbers representing seniority of the respective classes.</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>conversion_rights</td>
-<td>[ <a href="/docs/schema/types/conversion_rights/StockClassConversionRight.md">schema/types/conversion_rights/StockClassConversionRight</a> ]</td>
+<td>[ <a href="../../../../schema/types/conversion_rights/StockClassConversionRight.md">schema/types/conversion_rights/StockClassConversionRight</a> ]</td>
 <td>List of stock class conversion rights possible for this stock class</td>
 <td>-</td>
 </tr>
 <tr>
 <td>liquidation_preference_multiple</td>
-<td><a href="/docs/schema/types/Numeric.md">schema/types/Numeric</a></td>
+<td><a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></td>
 <td>The liquidation preference per share for this stock class</td>
 <td>-</td>
 </tr>
 <tr>
 <td>participation_cap_multiple</td>
-<td><a href="/docs/schema/types/Numeric.md">schema/types/Numeric</a></td>
+<td><a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></td>
 <td>The participation cap multiple per share for this stock class</td>
 <td>-</td>
 </tr>

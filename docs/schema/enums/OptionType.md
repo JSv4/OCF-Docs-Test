@@ -1,4 +1,4 @@
-:house: [Documentation Home](/docs/README.md)
+:house: [Documentation Home](../../../)
 
 ---
 

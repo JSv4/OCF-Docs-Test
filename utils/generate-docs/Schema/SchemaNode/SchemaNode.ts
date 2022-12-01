@@ -1,8 +1,5 @@
 import path from "node:path";
-import {
-  relativeSchemaPathToRepoRoot,
-  schemaPathRelativeToRepoRoot,
-} from "../../../schema-utils/PathTools.js";
+import { relativeSchemaPathToRepoRoot } from "../../../schema-utils/PathTools.js";
 import { markdownTable } from "markdown-table";
 import { format } from "date-fns";
 
@@ -47,7 +44,7 @@ export default abstract class SchemaNode {
 
   protected allOfMarkdown = (): string =>
     this.allOf()
-      .map((schemaNode) => `- ${schemaNode.markdownOutputLink()}`)
+      .map((schemaNode) => `- ${schemaNode.markdownDocumentationLink()}`)
       .join("\n");
 
   /**
@@ -97,7 +94,10 @@ export default abstract class SchemaNode {
     )}/${this.shortId()}.schema.json`;
   };
 
-  outputPath = () => `/docs/${this.shortId()}.md`;
+  outputFilePath = () => `/docs/${this.shortId()}.md`;
+
+  documentationPath = () =>
+    `${relativeSchemaPathToRepoRoot(this.directory())}/${this.shortId()}.md`;
 
   propertiesJson = () => this.json["properties"];
 
@@ -114,7 +114,10 @@ export default abstract class SchemaNode {
     ...this.allOf().flatMap((schemaNode) => schemaNode.required()),
   ];
 
-  markdownHeader = () => `:house: [Documentation Home](/docs/README.md)
+  markdownHeader =
+    () => `:house: [Documentation Home](${relativeSchemaPathToRepoRoot(
+      this.directory()
+    )}/)
 
 ---
 
@@ -154,5 +157,6 @@ export default abstract class SchemaNode {
 
   markdownSourceLink = () => `[${this.shortId()}](${this.sourcePath()})`;
 
-  markdownOutputLink = () => `[${this.shortId()}](${this.outputPath()})`;
+  markdownDocumentationLink = () =>
+    `[${this.shortId()}](${this.documentationPath()})`;
 }

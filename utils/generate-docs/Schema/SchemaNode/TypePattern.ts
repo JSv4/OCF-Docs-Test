@@ -19,7 +19,7 @@ export default class TypePatternSchemaNode extends SchemaNode {
 
   protected pattern = () => this.json["pattern"];
 
-  markdownTableType = () => `[${this.shortId()}](${this.outputPath()})`;
+  markdownTableType = () => `[${this.shortId()}](${this.documentationPath()})`;
 
   markdownOutput = () => `${this.markdownHeader()}
 

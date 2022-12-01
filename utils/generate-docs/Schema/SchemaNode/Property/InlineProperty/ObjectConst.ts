@@ -25,7 +25,7 @@ export default class ObjectConstProperty extends InlineProperty {
     );
 
   markdownTableType = () =>
-    `**Constant:** \`${this.const().toUpperCase()}\`</br>_Defined in ${this.objectTypeEnumSchemaNode().markdownOutputLink()}_`;
+    `**Constant:** \`${this.const().toUpperCase()}\`</br>_Defined in ${this.objectTypeEnumSchemaNode().markdownDocumentationLink()}_`;
 
   markdownTableDescription = () => "Object type field";
 }

@@ -3071,7 +3071,7 @@
 
   <h1>StockPlan</h1>
 
-<p><img alt="🏠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3e0.svg" title=":house:" /> <a href="/docs/README.md">Documentation Home</a></p>
+<p><img alt="🏠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3e0.svg" title=":house:" /> <a href="../../../">Documentation Home</a></p>
 <hr />
 <h3 id="object-stock-plan">Object - Stock Plan<a class="headerlink" href="#object-stock-plan" title="Permanent link">#</a></h3>
 <p><code>https://opencaptablecoalition.com/schema/objects/StockPlan.schema.json</code></p>
@@ -3079,7 +3079,7 @@
 <p><strong>Data Type:</strong> <code>OCF Object - STOCK_PLAN</code></p>
 <p><strong>Composed From:</strong></p>
 <ul>
-<li><a href="/docs/schema/primitives/objects/Object.md">schema/primitives/objects/Object</a></li>
+<li><a href="../../../../schema/primitives/objects/Object.md">schema/primitives/objects/Object</a></li>
 </ul>
 <p><strong>Properties:</strong></p>
 <table>
@@ -3106,7 +3106,7 @@
 </tr>
 <tr>
 <td>object_type</td>
-<td><strong>Constant:</strong> <code>STOCK_PLAN</code></br><em>Defined in <a href="/docs/schema/enums/ObjectType.md">schema/enums/ObjectType</a></em></td>
+<td><strong>Constant:</strong> <code>STOCK_PLAN</code></br><em>Defined in <a href="../../../schema/enums/ObjectType.md">schema/enums/ObjectType</a></em></td>
 <td>Object type field</td>
 <td><code>REQUIRED</code></td>
 </tr>
@@ -3118,19 +3118,19 @@
 </tr>
 <tr>
 <td>board_approval_date</td>
-<td><a href="/docs/schema/types/Date.md">schema/types/Date</a></td>
+<td><a href="../../../schema/types/Date.md">schema/types/Date</a></td>
 <td>Date on which board approved the plan</td>
 <td>-</td>
 </tr>
 <tr>
 <td>stockholder_approval_date</td>
-<td><a href="/docs/schema/types/Date.md">schema/types/Date</a></td>
+<td><a href="../../../schema/types/Date.md">schema/types/Date</a></td>
 <td>This optional field tracks when the stockholders approved this stock plan. This is intended for use by US companies that want to issue Incentive Stock Options (ISOs), as the issuing StockPlan must receive shareholder approval within a specified time frame in order to issue valid ISOs.</td>
 <td>-</td>
 </tr>
 <tr>
 <td>current_shares_reserved</td>
-<td><a href="/docs/schema/types/Numeric.md">schema/types/Numeric</a></td>
+<td><a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></td>
 <td>The most recent number of shares reserved in the pool for this stock plan by the Board or equivalent body. Actual shares issued and outstanding from the pool should be determined by traversing the event stack. The plan's reserved share history (e.g. previous <code>current_shares_reserved</code> amounts) is not available in OCF version 1.</td>
 <td><code>REQUIRED</code></td>
 </tr>
