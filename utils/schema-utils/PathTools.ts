@@ -1,8 +1,18 @@
 import path from "node:path";
+import fs from "fs";
 
 import { repo_url_root } from "./Constants.js";
 
 export const schemaDirPath = path.join("__dirname", "../../schema");
+
+/**
+ * WARNING - this makes the assumption that files end in an extension .<extname> . This is not a safe assumption EXCEPT
+ * in the confines of our subdirectories where that DOES follow our conventions. To make this function work in all possible
+ * situations, use the fs module.
+ * @param path_string String -> the path we want to check and see if it corresponds to file or directory
+ * @returns Boolean -> true if path is a file, false otherwise.
+ */
+export const isFile = (path_string: string) => !!path.extname(path_string);
 
 /**
  * Given the local schema path, get the relative path to the basename of schema file.
@@ -38,18 +48,19 @@ export const basenameFromSchemaPath = (schema_path: string) =>
  * Mkdocs teams refusal to support absolute links is obnoxious. Calculating relative paths dynamically for all markdown requires a lot more calculations here, yet platforms like
  * GitHub do support absolute links with no problems. In order to calculate relative links between MD docs... I realized we need to calculate
  * the relative paths between the two files, not from the repo root.
- * @param schema_path String - localpath to schema we want to calculate a path for
- * @param relative_to_schema_path String - localpath to schema we want to use as a frame of reference for relative link.
+ * @param target_file_path String - localpath to schema we want to calculate a path for
+ * @param source_file_path String - localpath to schema we want to use as a frame of reference for relative link.
  * @returns String -> Relative path from schema_path to relative_to_schema_path
  */
 export const relativeSchemaPathToOtherPath = (
-  schema_path: string,
-  relative_to_schema_path: string = "./schema"
-) =>
-  `/${path.relative(relative_to_schema_path, schema_path)}`.replace(
-    new RegExp("\\" + path.sep, "g"),
-    "/"
-  );
+  target_path: string,
+  source_path: string = "./schema"
+) => {
+  return `${path.relative(
+    isFile(source_path) ? path.dirname(source_path) : source_path,
+    isFile(target_path) ? path.dirname(target_path) : target_path
+  )}`.replace(new RegExp("\\" + path.sep, "g"), "/");
+};
 
 /**
  * Given the local path to the schema, return the path to the schema json relative to the schema dir.

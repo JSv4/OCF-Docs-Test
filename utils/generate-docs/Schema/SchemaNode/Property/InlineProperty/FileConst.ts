@@ -24,8 +24,10 @@ export default class FileConstProperty extends InlineProperty {
       "https://opencaptablecoalition.com/schema/enums/FileType.schema.json"
     );
 
-  markdownTableType = () =>
-    `**Constant:** \`${this.const().toUpperCase()}\`</br>_Defined in ${this.fileTypeEnumSchemaNode().markdownDocumentationLink()}_`;
+  markdownTableType = (inMdFileAtPath: string) =>
+    `**Constant:** \`${this.const().toUpperCase()}\`</br>_Defined in ${this.fileTypeEnumSchemaNode().relativePathToOutputDocumentation(
+      inMdFileAtPath
+    )}_`;
 
   markdownTableDescription = () => "Object type field";
 }

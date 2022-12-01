@@ -1,4 +1,4 @@
-:house: [Documentation Home](../../../)
+:house: [Documentation Home](../../../README.md)
 
 ---
 
@@ -21,6 +21,6 @@ _Type representation of an address_
 | country             | [schema/types/CountryCode](../../../schema/types/CountryCode.md)                                                                                        | Country code for this address (ISO 3166-1 alpha-2)                                | `REQUIRED` |
 | postal_code         | `STRING`                                                                                                                                                | Address postal code                                                               | -          |
 
-**Source Code:** [schema/types/Address](/../../../../schema/types/Address.schema.json)
+**Source Code:** [schema/types/Address](../../../../../../../../schema/types/Address.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

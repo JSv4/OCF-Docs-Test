@@ -21,7 +21,7 @@ export default class SchemaWriter {
   }
 
   protected deleteExistingFiles = () =>
-    fse.emptyDir(path.join(this.output, "docs/markdown/schema"));
+    fse.emptyDir(path.join(this.output, "markdown/schema"));
 
   protected tryWriteNewFile = (schemaNode: any) => {
     try {

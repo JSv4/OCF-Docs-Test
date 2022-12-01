@@ -1,4 +1,4 @@
-:house: [Documentation Home](../../../)
+:house: [Documentation Home](../../../README.md)
 
 ---
 
@@ -12,19 +12,19 @@
 
 **Composed From:**
 
-- [schema/primitives/objects/Object](../../../../schema/primitives/objects/Object.md)
+- [schema/primitives/objects/Object](../../../docs/markdown/schema/primitives/objects/Object.md)
 
 **Properties:**
 
-| Property    | Type                                                                                                                  | Description                                                     | Required   |
-| ----------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------- |
-| id          | `STRING`                                                                                                              | Identifier for the object                                       | `REQUIRED` |
-| comments    | [`STRING`]                                                                                                            | Unstructured text comments related to and stored for the object | -          |
-| object_type | **Constant:** `STOCK_LEGEND_TEMPLATE`</br>_Defined in [schema/enums/ObjectType](../../../schema/enums/ObjectType.md)_ | Object type field                                               | `REQUIRED` |
-| name        | `STRING`                                                                                                              | Name for the stock legend template                              | `REQUIRED` |
-| text        | `STRING`                                                                                                              | The full text of the stock legend                               | `REQUIRED` |
+| Property | Type                                                                          | Description                                                     | Required   |
+| -------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------- |
+| id       | `STRING`                                                                      | Identifier for the object                                       | `REQUIRED` |
+| comments | [`STRING`]                                                                    | Unstructured text comments related to and stored for the object | -          |
+|          | **Constant:** `STOCK_LEGEND_TEMPLATE`</br>_Defined in ../enums/ObjectType.md_ | Object type field                                               | -          |
+| name     | `STRING`                                                                      | Name for the stock legend template                              | `REQUIRED` |
+| text     | `STRING`                                                                      | The full text of the stock legend                               | `REQUIRED` |
 
-**Source Code:** [schema/objects/StockLegendTemplate](/../../../../schema/objects/StockLegendTemplate.schema.json)
+**Source Code:** [schema/objects/StockLegendTemplate](../../../../../../../../schema/objects/StockLegendTemplate.schema.json)
 
 **Examples:**
 

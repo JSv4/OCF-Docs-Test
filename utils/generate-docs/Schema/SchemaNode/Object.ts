@@ -36,7 +36,8 @@ ${JSON.stringify(this.examples(), null, 2)}
 \`\`\``
       : "";
 
-  markdownTableType = () => this.markdownDocumentationLink();
+  markdownTableType = (in_markdown_file_path: string) =>
+    this.markdownDocumentationLink(in_markdown_file_path);
 
   markdownOutput = () => `${this.markdownHeader()}
 
@@ -46,7 +47,7 @@ ${JSON.stringify(this.examples(), null, 2)}
 
 **Composed From:**
 
-${this.allOfMarkdown()}
+${this.allOfMarkdown(this.directory())}
 
 **Properties:**
 

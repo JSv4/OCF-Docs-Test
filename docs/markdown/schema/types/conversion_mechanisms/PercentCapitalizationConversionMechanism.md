@@ -1,4 +1,4 @@
-:house: [Documentation Home](../../../../)
+:house: [Documentation Home](../../../../README.md)
 
 ---
 
@@ -18,6 +18,6 @@ _Sets forth inputs and conversion mechanism of percent of capitalization convers
 | converts_to_percent       | [schema/types/Percentage](../../../schema/types/Percentage.md) | What percentage of the company capitalization does this convert to                                                             | `REQUIRED` |
 | capitalization_definition | `STRING`                                                       | How is company capitalization defined for purposes of conversion? If possible, include the legal language from the instrument. | -          |
 
-**Source Code:** [schema/types/conversion_mechanisms/PercentCapitalizationConversionMechanism](/../../../../../schema/types/conversion_mechanisms/PercentCapitalizationConversionMechanism.schema.json)
+**Source Code:** [schema/types/conversion_mechanisms/PercentCapitalizationConversionMechanism](../../../../../../../../../schema/types/conversion_mechanisms/PercentCapitalizationConversionMechanism.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

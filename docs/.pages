@@ -1,5 +1,5 @@
 nav:
   - Introduction: "README.md"
-  - OCF Schemas: markdown/schema
+  - OCF Schemas: markdown
   - Tutorials:
       - "Model a Transfer": "markdown/how_tos/Transfers.md"

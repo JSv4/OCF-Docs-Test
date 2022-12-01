@@ -11,10 +11,17 @@ export interface ObjectConstJson {
 
 export default class ObjectConstProperty extends InlineProperty {
   protected readonly json: ObjectConstJson;
+  protected readonly inMdFileAtPath: string;
 
-  constructor(schema: Schema, json: ObjectConstJson, idOverride?: string) {
+  constructor(
+    schema: Schema,
+    json: ObjectConstJson,
+    inMdFileAtPath: string,
+    idOverride?: string
+  ) {
     super(schema, json, idOverride);
     this.json = json;
+    this.inMdFileAtPath = inMdFileAtPath;
   }
 
   protected const = () => this.json["const"];
@@ -24,8 +31,10 @@ export default class ObjectConstProperty extends InlineProperty {
       "https://opencaptablecoalition.com/schema/enums/ObjectType.schema.json"
     );
 
-  markdownTableType = () =>
-    `**Constant:** \`${this.const().toUpperCase()}\`</br>_Defined in ${this.objectTypeEnumSchemaNode().markdownDocumentationLink()}_`;
+  markdownTableType = (inMdFileAtPath: string) =>
+    `**Constant:** \`${this.const().toUpperCase()}\`</br>_Defined in ${this.objectTypeEnumSchemaNode().relativePathToOutputDocumentation(
+      inMdFileAtPath
+    )}_`;
 
   markdownTableDescription = () => "Object type field";
 }

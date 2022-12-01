@@ -16,25 +16,41 @@ import SchemaNodeFactory, {
 export type { SchemaNodeJson };
 export type { ExampleJson };
 
-const ROOT = path.resolve(fileURLToPath(import.meta.url), "../../../..");
+export const REPO_ROOT = path.resolve(
+  fileURLToPath(import.meta.url),
+  "../../../.."
+);
 
 /**
  *  Schema represents the OCF schema format.
  */
 export default class Schema {
   static generateDocs = async () => {
-    const schemaNodeJsons = await SchemaReader.read(path.join(ROOT, "schema"));
-    const exampleJsons = await ExamplesReader.read(path.join(ROOT, "samples"));
+    const schemaNodeJsons = await SchemaReader.read(
+      path.join(REPO_ROOT, "schema")
+    );
+    const exampleJsons = await ExamplesReader.read(
+      path.join(REPO_ROOT, "samples")
+    );
     const supplementalMarkdowns = await SupplementalsReader.read(
-      path.join(ROOT, "docs", "supplemental")
+      path.join(REPO_ROOT, "docs", "supplemental")
     );
     const schema = new Schema(
       schemaNodeJsons,
       exampleJsons,
       supplementalMarkdowns
     );
-    await SchemaWriter.write(path.join(ROOT, "docs"), schema);
-    await TableOfContents.write(schema, path.join(ROOT, "docs", "README.md"));
+    await SchemaWriter.write(REPO_ROOT, schema);
+    await TableOfContents.write(
+      schema,
+      REPO_ROOT,
+      path.join("docs", "README.md")
+    );
+    await TableOfContents.write_index(
+      schema,
+      REPO_ROOT,
+      path.join("docs", "markdown", "INDEX.md")
+    );
   };
 
   readonly schemaNodes: SchemaNode[];

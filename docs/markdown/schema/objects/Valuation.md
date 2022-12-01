@@ -1,4 +1,4 @@
-:house: [Documentation Home](../../../)
+:house: [Documentation Home](../../../README.md)
 
 ---
 
@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- [schema/primitives/objects/Object](../../../../schema/primitives/objects/Object.md)
+- [schema/primitives/objects/Object](../../../docs/markdown/schema/primitives/objects/Object.md)
 
 **Properties:**
 
@@ -20,14 +20,14 @@
 | ------------------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | id                  | `STRING`                                                                                                             | Identifier for the object                                                                                                                           | `REQUIRED` |
 | comments            | [`STRING`]                                                                                                           | Unstructured text comments related to and stored for the object                                                                                     | -          |
-| object_type         | **Constant:** `VALUATION`</br>_Defined in [schema/enums/ObjectType](../../../schema/enums/ObjectType.md)_            | Object type field                                                                                                                                   | `REQUIRED` |
+|                     | **Constant:** `VALUATION`</br>_Defined in ../enums/ObjectType.md_                                                    | Object type field                                                                                                                                   | -          |
 | provider            | `STRING`                                                                                                             | Entity which provided the valuation                                                                                                                 | -          |
-| board_approval_date | [schema/types/Date](../../../schema/types/Date.md)                                                                   | Date on which board approved the valuation. This is essential for 409A valuations, in particular, which require the Board to approve the valuation. | -          |
-| price_per_share     | [schema/types/Monetary](../../../schema/types/Monetary.md)                                                           | Valued price per share                                                                                                                              | `REQUIRED` |
-| effective_date      | [schema/types/Date](../../../schema/types/Date.md)                                                                   | Date on which this valuation is first valid                                                                                                         | `REQUIRED` |
+| board_approval_date | [schema/types/Date](../OCF-Docs-Test/docs/markdown/schema/types/Date.md)                                             | Date on which board approved the valuation. This is essential for 409A valuations, in particular, which require the Board to approve the valuation. | -          |
+| price_per_share     | [schema/types/Monetary](../OCF-Docs-Test/docs/markdown/schema/types/Monetary.md)                                     | Valued price per share                                                                                                                              | `REQUIRED` |
+| effective_date      | [schema/types/Date](../OCF-Docs-Test/docs/markdown/schema/types/Date.md)                                             | Date on which this valuation is first valid                                                                                                         | `REQUIRED` |
 | valuation_type      | `Enum - Valuation Type`</br></br>_Description:_ Enumeration of valuation types</br></br>**ONE OF:** </br>&bull; 409A | Seam for supporting different types of valuations in future versions                                                                                | `REQUIRED` |
 
-**Source Code:** [schema/objects/Valuation](/../../../../schema/objects/Valuation.schema.json)
+**Source Code:** [schema/objects/Valuation](../../../../../../../../schema/objects/Valuation.schema.json)
 
 **Examples:**
 

@@ -1,4 +1,4 @@
-:house: [Documentation Home](../../../)
+:house: [Documentation Home](../../../README.md)
 
 ---
 
@@ -17,6 +17,6 @@ _Type representation of an amount of money in a specified currency_
 | amount   | [schema/types/Numeric](../../../schema/types/Numeric.md)           | Numeric amount of money | `REQUIRED` |
 | currency | [schema/types/CurrencyCode](../../../schema/types/CurrencyCode.md) | ISO 4217 currency code  | `REQUIRED` |
 
-**Source Code:** [schema/types/Monetary](/../../../../schema/types/Monetary.schema.json)
+**Source Code:** [schema/types/Monetary](../../../../../../../../schema/types/Monetary.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

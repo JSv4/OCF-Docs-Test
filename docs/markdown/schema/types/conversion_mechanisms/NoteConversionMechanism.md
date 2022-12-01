@@ -1,4 +1,4 @@
-:house: [Documentation Home](../../../../)
+:house: [Documentation Home](../../../../README.md)
 
 ---
 
@@ -21,10 +21,10 @@ _Sets forth inputs and conversion mechanism of a convertible note_
 | interest_accrual_period  | `Enum - Accrual Period Type`</br></br>_Description:_ Enumeration of interest accrual period types</br></br>**ONE OF:** </br>&bull; DAILY </br>&bull; MONTHLY </br>&bull; QUARTERLY </br>&bull; SEMI_ANNUAL </br>&bull; ANNUAL | What is the period over which interest is calculated?                                                                     | `REQUIRED` |
 | compounding_type         | `Enum - Compounding Type`</br></br>_Description:_ Enumeration of interest compounding types</br></br>**ONE OF:** </br>&bull; COMPOUNDING </br>&bull; SIMPLE                                                                   | What type of interest compounding?                                                                                        | `REQUIRED` |
 | conversion_discount      | [schema/types/Percentage](../../../schema/types/Percentage.md)                                                                                                                                                                | What is the percentage discount available upon conversion, if applicable? (decimal representation - e.g. 0.125 for 12.5%) | -          |
-| conversion_valuation_cap | [schema/types/Monetary](../../../schema/types/Monetary.md)                                                                                                                                                                    | What is the valuation cap (if applicable)?                                                                                | -          |
-| exit_multiple            | [schema/types/Ratio](../../../schema/types/Ratio.md)                                                                                                                                                                          | For cash proceeds calculation during a liquidity event.                                                                   | -          |
+| conversion_valuation_cap | [schema/types/Monetary](OCF-Docs-Test/docs/markdown/schema/types/Monetary.md)                                                                                                                                                 | What is the valuation cap (if applicable)?                                                                                | -          |
+| exit_multiple            | [schema/types/Ratio](OCF-Docs-Test/docs/markdown/schema/types/Ratio.md)                                                                                                                                                       | For cash proceeds calculation during a liquidity event.                                                                   | -          |
 | conversion_mfn           | `BOOLEAN`                                                                                                                                                                                                                     | Is this an MFN (Most Favored Nations) flavored Convertible Note?                                                          | -          |
 
-**Source Code:** [schema/types/conversion_mechanisms/NoteConversionMechanism](/../../../../../schema/types/conversion_mechanisms/NoteConversionMechanism.schema.json)
+**Source Code:** [schema/types/conversion_mechanisms/NoteConversionMechanism](../../../../../../../../../schema/types/conversion_mechanisms/NoteConversionMechanism.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

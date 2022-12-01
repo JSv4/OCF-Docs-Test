@@ -31,7 +31,7 @@ export default class FileSchemaNode extends SchemaNode {
 
 **Composed From:**
 
-${this.allOfMarkdown()}
+${this.allOfMarkdown(this.directory())}
 
 **Properties:**
 
