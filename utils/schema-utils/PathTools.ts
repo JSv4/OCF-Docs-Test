@@ -35,15 +35,29 @@ export const basenameFromSchemaPath = (schema_path: string) =>
   path.basename(schema_path, ".schema.json");
 
 /**
+ * Mkdocs teams refusal to support absolute links is obnoxious. Calculating relative paths dynamically for all markdown requires a lot more calculations here, yet platforms like
+ * GitHub do support absolute links with no problems. In order to calculate relative links between MD docs... I realized we need to calculate
+ * the relative paths between the two files, not from the repo root.
+ * @param schema_path String - localpath to schema we want to calculate a path for
+ * @param relative_to_schema_path String - localpath to schema we want to use as a frame of reference for relative link.
+ * @returns String -> Relative path from schema_path to relative_to_schema_path
+ */
+export const relativeSchemaPathToOtherPath = (
+  schema_path: string,
+  relative_to_schema_path: string = "./schema"
+) =>
+  `/${path.relative(relative_to_schema_path, schema_path)}`.replace(
+    new RegExp("\\" + path.sep, "g"),
+    "/"
+  );
+
+/**
  * Given the local path to the schema, return the path to the schema json relative to the schema dir.
  * @param schema_path String -> Local path to the schema
  * @returns String -> The relative path to the schema file in the ./schema repo dir
  */
 export const schemaPathRelativeToSchemaDir = (schema_path: string) =>
-  `/${path.relative("./schema", schema_path)}`.replace(
-    new RegExp("\\" + path.sep, "g"),
-    "/"
-  );
+  relativeSchemaPathToOtherPath(schema_path);
 
 /**
  * MkDocs only supports using relative paths from the current MD file to the repo root. E.g. If you're lookin at a file in /schema/enums/, and you

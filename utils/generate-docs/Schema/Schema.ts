@@ -33,7 +33,7 @@ export default class Schema {
       exampleJsons,
       supplementalMarkdowns
     );
-    await SchemaWriter.write(path.join(ROOT), schema);
+    await SchemaWriter.write(path.join(ROOT, "docs"), schema);
     await TableOfContents.write(schema, path.join(ROOT, "docs", "README.md"));
   };
 

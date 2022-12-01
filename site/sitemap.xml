@@ -6,687 +6,682 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/how_tos/Transfers/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/AccrualPeriodType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/AccrualPeriodType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/AddressType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/AddressType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/AllocationType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/AllocationType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/CompensationType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/CompensationType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/CompoundingType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/CompoundingType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/ConversionMechanismType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/ConversionMechanismType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/ConversionRightType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/ConversionRightType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/ConversionTriggerType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/ConversionTriggerType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/ConvertibleType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/ConvertibleType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/DayCountType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/DayCountType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/EmailType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/EmailType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/FileType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/FileType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/InterestPayoutType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/InterestPayoutType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/OCFVersionType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/OCFVersionType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/ObjectType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/ObjectType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/OptionType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/OptionType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/ParentSecurityType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/ParentSecurityType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/PeriodType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/PeriodType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/PhoneType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/PhoneType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/RoundingType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/RoundingType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/StakeholderRelationshipType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/StakeholderRelationshipType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/StakeholderType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/StakeholderType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/StockClassType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/StockClassType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/TerminationWindowType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/TerminationWindowType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/ValuationType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/ValuationType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/VestingDayOfMonth/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/VestingDayOfMonth/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/enums/VestingTriggerType/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/enums/VestingTriggerType/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/files/OCFManifestFile/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/files/OCFManifestFile/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/files/StakeholdersFile/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/files/StakeholdersFile/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/files/StockClassesFile/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/files/StockClassesFile/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/files/StockLegendTemplatesFile/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/files/StockLegendTemplatesFile/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/files/StockPlansFile/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/files/StockPlansFile/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/files/TransactionsFile/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/files/TransactionsFile/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/files/ValuationsFile/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/files/ValuationsFile/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/files/VestingTermsFile/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/files/VestingTermsFile/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/Issuer/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/Issuer/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/Stakeholder/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/Stakeholder/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/StockClass/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/StockClass/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/StockLegendTemplate/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/StockLegendTemplate/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/StockPlan/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/StockPlan/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/Valuation/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/Valuation/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/VestingTerms/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/VestingTerms/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/acceptance/ConvertibleAcceptance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/acceptance/ConvertibleAcceptance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/acceptance/PlanSecurityAcceptance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/acceptance/PlanSecurityAcceptance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/acceptance/StockAcceptance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/acceptance/StockAcceptance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/acceptance/WarrantAcceptance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/acceptance/WarrantAcceptance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/cancellation/ConvertibleCancellation/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/cancellation/ConvertibleCancellation/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/cancellation/PlanSecurityCancellation/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/cancellation/PlanSecurityCancellation/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/cancellation/StockCancellation/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/cancellation/StockCancellation/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/cancellation/WarrantCancellation/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/cancellation/WarrantCancellation/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/conversion/ConvertibleConversion/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/conversion/ConvertibleConversion/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/conversion/StockConversion/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/conversion/StockConversion/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/exercise/PlanSecurityExercise/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/exercise/PlanSecurityExercise/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/exercise/WarrantExercise/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/exercise/WarrantExercise/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/issuance/ConvertibleIssuance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/issuance/ConvertibleIssuance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/issuance/PlanSecurityIssuance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/issuance/PlanSecurityIssuance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/issuance/StockIssuance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/issuance/StockIssuance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/issuance/WarrantIssuance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/issuance/WarrantIssuance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/reissuance/StockReissuance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/reissuance/StockReissuance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/release/PlanSecurityRelease/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/release/PlanSecurityRelease/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/repurchase/StockRepurchase/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/repurchase/StockRepurchase/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/retraction/ConvertibleRetraction/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/retraction/ConvertibleRetraction/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/retraction/PlanSecurityRetraction/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/retraction/PlanSecurityRetraction/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/retraction/StockRetraction/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/retraction/StockRetraction/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/retraction/WarrantRetraction/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/retraction/WarrantRetraction/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/split/StockClassSplit/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/split/StockClassSplit/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/transfer/ConvertibleTransfer/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/transfer/ConvertibleTransfer/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/transfer/PlanSecurityTransfer/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/transfer/PlanSecurityTransfer/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/transfer/StockTransfer/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/transfer/StockTransfer/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/transfer/WarrantTransfer/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/transfer/WarrantTransfer/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/vesting/VestingEvent/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/vesting/VestingEvent/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/objects/transactions/vesting/VestingStart/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/objects/transactions/vesting/VestingStart/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/files/File/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/files/File/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/Object/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/Object/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/SecurityTransaction/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/SecurityTransaction/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/StockClassTransaction/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/StockClassTransaction/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/Transaction/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/Transaction/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/acceptance/Acceptance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/acceptance/Acceptance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/cancellation/Cancellation/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/cancellation/Cancellation/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/conversion/Conversion/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/conversion/Conversion/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/exercise/Exercise/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/exercise/Exercise/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/issuance/Issuance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/issuance/Issuance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/reissuance/Reissuance/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/reissuance/Reissuance/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/release/Release/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/release/Release/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/repurchase/Repurchase/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/repurchase/Repurchase/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/retraction/Retraction/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/retraction/Retraction/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/objects/transactions/transfer/Transfer/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/objects/transactions/transfer/Transfer/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/types/conversion_mechanisms/ConversionMechanism/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/types/conversion_mechanisms/ConversionMechanism/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/types/conversion_rights/ConversionRight/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/types/conversion_rights/ConversionRight/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/types/conversion_triggers/ConversionTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/types/conversion_triggers/ConversionTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/types/vesting/VestingConditionTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/types/vesting/VestingConditionTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/primitives/types/vesting/VestingPeriod/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/primitives/types/vesting/VestingPeriod/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/Address/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/Address/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/CapitalizationDefinition/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/CapitalizationDefinition/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/ContactInfo/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/ContactInfo/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/CountryCode/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/CountryCode/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/CountrySubdivisionCode/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/CountrySubdivisionCode/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/CurrencyCode/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/CurrencyCode/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/Date/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/Date/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/Email/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/Email/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/File/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/File/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/Md5/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/Md5/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/Monetary/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/Monetary/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/Name/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/Name/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/Numeric/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/Numeric/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/Percentage/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/Percentage/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/Phone/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/Phone/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/PreReleaseOmission/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/PreReleaseOmission/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/Ratio/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/Ratio/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/SecurityExemption/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/SecurityExemption/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/StockParent/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/StockParent/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/TaxID/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/TaxID/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/TerminationWindow/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/TerminationWindow/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_mechanisms/CustomConversionMechanism/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_mechanisms/CustomConversionMechanism/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_mechanisms/FixedAmountConversionMechanism/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_mechanisms/FixedAmountConversionMechanism/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_mechanisms/NoteConversionMechanism/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_mechanisms/NoteConversionMechanism/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_mechanisms/PercentCapitalizationConversionMechanism/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_mechanisms/PercentCapitalizationConversionMechanism/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_mechanisms/RatioConversionMechanism/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_mechanisms/RatioConversionMechanism/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_mechanisms/SAFEConversionMechanism/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_mechanisms/SAFEConversionMechanism/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_rights/ConvertibleConversionRight/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_rights/ConvertibleConversionRight/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_rights/StockClassConversionRight/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_rights/StockClassConversionRight/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_rights/WarrantConversionRight/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_rights/WarrantConversionRight/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_triggers/AutomaticConversionOnConditionTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_triggers/AutomaticConversionOnConditionTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_triggers/AutomaticConversionOnDateTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_triggers/AutomaticConversionOnDateTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_triggers/ElectiveConversionAtWillTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_triggers/ElectiveConversionAtWillTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_triggers/ElectiveConversionInDateRangeTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_triggers/ElectiveConversionInDateRangeTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_triggers/ElectiveConversionOnConditionTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_triggers/ElectiveConversionOnConditionTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/conversion_triggers/UnspecifiedConversionTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/conversion_triggers/UnspecifiedConversionTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/vesting/VestingCondition/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/vesting/VestingCondition/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/vesting/VestingConditionPortion/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/vesting/VestingConditionPortion/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/vesting/VestingEventTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/vesting/VestingEventTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/vesting/VestingPeriodInDays/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/vesting/VestingPeriodInDays/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/vesting/VestingPeriodInMonths/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/vesting/VestingPeriodInMonths/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/vesting/VestingScheduleAbsoluteTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/vesting/VestingScheduleAbsoluteTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/vesting/VestingScheduleRelativeTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/vesting/VestingScheduleRelativeTrigger/</loc>
-         <lastmod>2022-12-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/schema/types/vesting/VestingStartTrigger/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/schema/types/vesting/VestingStartTrigger/</loc>
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>

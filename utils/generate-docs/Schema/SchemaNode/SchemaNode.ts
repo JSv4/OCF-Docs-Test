@@ -1,10 +1,14 @@
 import path from "node:path";
-import { relativeSchemaPathToRepoRoot } from "../../../schema-utils/PathTools.js";
+import {
+  relativeSchemaPathToOtherPath,
+  relativeSchemaPathToRepoRoot,
+} from "../../../schema-utils/PathTools.js";
 import { markdownTable } from "markdown-table";
 import { format } from "date-fns";
 
 import Schema from "../Schema.js";
 import PropertyFactory, { PropertyJson } from "./Property/Factory.js";
+import { Console } from "node:console";
 
 export interface SchemaNodeJson {
   $id: string;
@@ -94,7 +98,29 @@ export default abstract class SchemaNode {
     )}/${this.shortId()}.schema.json`;
   };
 
-  outputFilePath = () => `/docs/${this.shortId()}.md`;
+  /**
+   * Within the resulting /docs folder, what is the absolute path for the resulting markdown file when written to disk?
+   * @returns "absolute" path from the /docs folder to resulting MD.
+   */
+  outputFileAbsolutePath = () => `/markdown/${this.shortId()}.md`;
+
+  /**
+   * Using repo root as root, what is the absolute path of the schema used to generate this MD file?
+   * @returns "absolute" path from the repo root to the source schema use to generate the MD.
+   */
+  sourceSchemaAbsolutePath = () => `/${this.shortId()}.schema.json`;
+
+  relativePathToSource = () => {
+    console.log(
+      `Calculate relative path from ${this.outputFileAbsolutePath()} to ${this.sourceSchemaAbsolutePath()}`
+    );
+    const rel_path = relativeSchemaPathToOtherPath(
+      this.sourceSchemaAbsolutePath(),
+      this.outputFileAbsolutePath()
+    );
+    console.log("Relative path is ", rel_path);
+    return rel_path;
+  };
 
   documentationPath = () =>
     `${relativeSchemaPathToRepoRoot(this.directory())}/${this.shortId()}.md`;
@@ -155,7 +181,8 @@ export default abstract class SchemaNode {
 
   abstract markdownOutput(): string;
 
-  markdownSourceLink = () => `[${this.shortId()}](${this.sourcePath()})`;
+  markdownSourceLink = () =>
+    `[${this.shortId()}](${this.relativePathToSource()})`;
 
   markdownDocumentationLink = () =>
     `[${this.shortId()}](${this.documentationPath()})`;
