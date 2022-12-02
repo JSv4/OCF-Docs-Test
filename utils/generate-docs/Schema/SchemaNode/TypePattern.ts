@@ -20,9 +20,7 @@ export default class TypePatternSchemaNode extends SchemaNode {
   protected pattern = () => this.json["pattern"];
 
   markdownTableType = (inMdFileAtPath: string) =>
-    `[${this.shortId()}](${this.relativePathToOutputDocumentation(
-      inMdFileAtPath
-    )})`;
+    `${this.mdLinkToNodesMdDocs(inMdFileAtPath)}`;
 
   markdownOutput = () => `${this.markdownHeader()}
 

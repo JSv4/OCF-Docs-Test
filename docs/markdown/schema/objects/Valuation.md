@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- [schema/primitives/objects/Object](../primitives/objects/Object.md) ../primitives/objects/Object.md
+- [schema/primitives/objects/Object](../primitives/objects/Object.md)
 
 **Properties:**
 
@@ -20,7 +20,7 @@
 | ------------------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | id                  | `STRING`                                                                                                             | Identifier for the object                                                                                                                           | `REQUIRED` |
 | comments            | [`STRING`]                                                                                                           | Unstructured text comments related to and stored for the object                                                                                     | -          |
-|                     | **Constant:** `VALUATION`</br>_Defined in [schema/enums/ObjectType.schema.json](../enums/ObjectType.md)_             | Object type field                                                                                                                                   | -          |
+|                     | **Constant:** `VALUATION`</br>_Defined in [schema/enums/ObjectType](../enums/ObjectType.md)_                         | Object type field                                                                                                                                   | -          |
 | provider            | `STRING`                                                                                                             | Entity which provided the valuation                                                                                                                 | -          |
 | board_approval_date | [schema/types/Date](../types/Date.md)                                                                                | Date on which board approved the valuation. This is essential for 409A valuations, in particular, which require the Board to approve the valuation. | -          |
 | price_per_share     | [schema/types/Monetary](../types/Monetary.md)                                                                        | Valued price per share                                                                                                                              | `REQUIRED` |

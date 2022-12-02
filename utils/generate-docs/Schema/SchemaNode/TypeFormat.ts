@@ -20,9 +20,7 @@ export default class TypeFormatSchemaNode extends SchemaNode {
   protected format = () => this.json["format"];
 
   markdownTableType = (inMdFileAtPath: string) =>
-    `[${this.shortId()}](${this.relativePathToOutputDocumentation(
-      inMdFileAtPath
-    )})`;
+    `${this.mdLinkToNodesMdDocs(inMdFileAtPath)}`;
 
   markdownOutput = () => `${this.markdownHeader()}
 

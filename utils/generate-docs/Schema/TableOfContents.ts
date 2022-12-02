@@ -54,9 +54,7 @@ export default class TableOfContents {
     .description()
     .replace(/\n/g, "\n  ")
     .replace(/ \n/g, "\n")}
-  - **View more:** [${schemaNode.shortId()}](${schemaNode.relativePathToOutputDocumentation(
-    links_rel_to_path
-  )})`;
+  - **View more:** ${schemaNode.mdLinkToNodesMdDocs(links_rel_to_path)}`;
 
   protected markdownForSchemaNodesOfParentType = (
     parentType: string,

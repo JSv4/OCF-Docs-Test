@@ -12,14 +12,14 @@
 
 **Composed From:**
 
-- [schema/primitives/files/File](../primitives/files/File.md) ../primitives/files/File.md
+- [schema/primitives/files/File](../primitives/files/File.md)
 
 **Properties:**
 
-| Property  | Type                                                                                                            | Description                    | Required   |
-| --------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------ | ---------- |
-| file_type | **Constant:** `OCF_STOCK_PLANS_FILE`</br>_Defined in [schema/enums/FileType.schema.json](../enums/FileType.md)_ | Object type field              | `REQUIRED` |
-| items     | [ [schema/objects/StockPlan](../objects/StockPlan.md) ]                                                         | List of OCF stock plan objects | `REQUIRED` |
+| Property  | Type                                                                                                | Description                    | Required   |
+| --------- | --------------------------------------------------------------------------------------------------- | ------------------------------ | ---------- |
+| file_type | **Constant:** `OCF_STOCK_PLANS_FILE`</br>_Defined in [schema/enums/FileType](../enums/FileType.md)_ | Object type field              | `REQUIRED` |
+| items     | [ [schema/objects/StockPlan](../objects/StockPlan.md) ]                                             | List of OCF stock plan objects | `REQUIRED` |
 
 **Source Code:** [schema/files/StockPlansFile](../../../../schema/files/StockPlansFile.schema.json)
 

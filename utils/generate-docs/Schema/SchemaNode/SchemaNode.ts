@@ -46,11 +46,7 @@ export default abstract class SchemaNode {
     this.allOf()
       .map(
         (schemaNode) =>
-          `- ${schemaNode.mdLinkToNodesMdDocs(
-            this.outputFileAbsolutePath()
-          )} ${schemaNode.relativePathToOutputDocumentation(
-            this.outputFileAbsolutePath()
-          )}`
+          `- ${schemaNode.mdLinkToNodesMdDocs(this.outputFileAbsolutePath())}`
       )
       .join("\n");
 
@@ -103,28 +99,17 @@ export default abstract class SchemaNode {
 
   // schema/primitives/types/conversion_rights/ConversionRight.schema.json
   // docs/markdown/INDEX.md
-  relativePathToSource = () => {
-    console.log(
-      `Calculate relative path to source from MD for ${this.shortId()} @ ${this.outputFileAbsolutePath()} with source path of ${this.sourceSchemaAbsolutePath()}`
-    );
-    const rel_path = `${relativePathToOtherPath(
+  relativePathToSource = () =>
+    `${relativePathToOtherPath(
       this.sourceSchemaAbsolutePath(),
       this.outputFileAbsolutePath()
     )}/${this.basename()}.schema.json`;
 
-    console.log(`Resulting path ${rel_path}`);
-    return rel_path;
-  };
-
-  relativePathToOutputDocumentation = (relative_to_absolute_path: string) => {
-    console.log(
-      `Calculate relativePathToOutputDocumentation for ${this.shortId()} in file ${relative_to_absolute_path}`
-    );
-    return `${relativePathToOtherPath(
+  relativePathToOutputDocumentation = (relative_to_absolute_path: string) =>
+    `${relativePathToOtherPath(
       this.outputFileAbsolutePath(),
       relative_to_absolute_path
     )}/${this.basename()}.md`;
-  };
 
   propertiesJson = () => this.json["properties"];
 
