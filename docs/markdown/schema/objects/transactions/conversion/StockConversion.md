@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/conversion/Conversion.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/conversion/Conversion](../../../primitives/objects/transactions/conversion/Conversion.md) ../../../primitives/objects/transactions/conversion/Conversion.md
 
 **Properties:**
 
@@ -30,7 +30,7 @@
 | balance_security_id    | `STRING`                                                                                                                 | Identifier for the security that holds the remainder balance (for partial conversions)                                                                                                                                                                                                                                                                                                                                                                                                                      | -          |
 | quantity_converted     | [schema/types/Numeric](../../../types/Numeric.md)                                                                        | Quantity of non-monetary security units converted                                                                                                                                                                                                                                                                                                                                                                                                                                                           | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/conversion/StockConversion](../../../../docs/markdown/schema/objects/transactions/conversion/StockConversion.schema.json)
+**Source Code:** [schema/objects/transactions/conversion/StockConversion](../../../../../../schema/objects/transactions/conversion/StockConversion.schema.json)
 
 **Examples:**
 

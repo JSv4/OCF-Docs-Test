@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/release/Release.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/release/Release](../../../primitives/objects/transactions/release/Release.md) ../../../primitives/objects/transactions/release/Release.md
 
 **Properties:**
 
@@ -32,7 +32,7 @@
 | consideration_text     | `STRING`                                                                                                                      | Unstructured text description of consideration provided in exchange for security release                                                                                                                                                                                                                                                                                                                                                                                                                    | -          |
 | resulting_security_ids | [`STRING`]                                                                                                                    | Identifier of the new security (or securities) issuance resulting from a release transaction                                                                                                                                                                                                                                                                                                                                                                                                                | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/release/PlanSecurityRelease](../../../../docs/markdown/schema/objects/transactions/release/PlanSecurityRelease.schema.json)
+**Source Code:** [schema/objects/transactions/release/PlanSecurityRelease](../../../../../../schema/objects/transactions/release/PlanSecurityRelease.schema.json)
 
 **Examples:**
 

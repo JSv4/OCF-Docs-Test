@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- ../primitives/files/File.md
+- [schema/primitives/files/File](../primitives/files/File.md) ../primitives/files/File.md
 
 **Properties:**
 
@@ -21,6 +21,6 @@
 | file_type | **Constant:** `OCF_VESTING_TERMS_FILE`</br>_Defined in [schema/enums/FileType.schema.json](../enums/FileType.md)_ | Object type field                 | `REQUIRED` |
 | items     | [ [schema/objects/VestingTerms](../objects/VestingTerms.md) ]                                                     | List of OCF vesting terms objects | `REQUIRED` |
 
-**Source Code:** [schema/files/VestingTermsFile](../../docs/markdown/schema/files/VestingTermsFile.schema.json)
+**Source Code:** [schema/files/VestingTermsFile](../../../../schema/files/VestingTermsFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

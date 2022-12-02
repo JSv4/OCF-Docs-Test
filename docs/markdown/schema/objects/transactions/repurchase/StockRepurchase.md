@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/repurchase/Repurchase.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/repurchase/Repurchase](../../../primitives/objects/transactions/repurchase/Repurchase.md) ../../../primitives/objects/transactions/repurchase/Repurchase.md
 
 **Properties:**
 
@@ -31,7 +31,7 @@
 | consideration_text  | `STRING`                                                                                                                 | Unstructured text description of consideration provided in exchange for security repurchase                                                                                                                                                                                                                                                                                                                                                                                                                 | -          |
 | balance_security_id | `STRING`                                                                                                                 | Identifier for the security that holds the remainder balance (for partial repurchases)                                                                                                                                                                                                                                                                                                                                                                                                                      | -          |
 
-**Source Code:** [schema/objects/transactions/repurchase/StockRepurchase](../../../../docs/markdown/schema/objects/transactions/repurchase/StockRepurchase.schema.json)
+**Source Code:** [schema/objects/transactions/repurchase/StockRepurchase](../../../../../../schema/objects/transactions/repurchase/StockRepurchase.schema.json)
 
 **Examples:**
 

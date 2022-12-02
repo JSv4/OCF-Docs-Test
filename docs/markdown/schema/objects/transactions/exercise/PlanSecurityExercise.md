@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/exercise/Exercise.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/exercise/Exercise](../../../primitives/objects/transactions/exercise/Exercise.md) ../../../primitives/objects/transactions/exercise/Exercise.md
 
 **Properties:**
 
@@ -30,7 +30,7 @@
 | resulting_security_ids | [`STRING`]                                                                                                                     | Identifier for the security (or securities) that resulted from the exercise                                                                                                                                                                                                                                                                                                                                                                                                                                 | `REQUIRED` |
 | quantity               | [schema/types/Numeric](../../../types/Numeric.md)                                                                              | Quantity of shares exercised                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/exercise/PlanSecurityExercise](../../../../docs/markdown/schema/objects/transactions/exercise/PlanSecurityExercise.schema.json)
+**Source Code:** [schema/objects/transactions/exercise/PlanSecurityExercise](../../../../../../schema/objects/transactions/exercise/PlanSecurityExercise.schema.json)
 
 **Examples:**
 

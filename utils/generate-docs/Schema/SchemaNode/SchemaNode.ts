@@ -1,5 +1,5 @@
 import path from "node:path";
-import { relativeSchemaPathToOtherPath } from "../../../schema-utils/PathTools.js";
+import { relativePathToOtherPath } from "../../../schema-utils/PathTools.js";
 import { markdownTable } from "markdown-table";
 import { format } from "date-fns";
 
@@ -46,7 +46,9 @@ export default abstract class SchemaNode {
     this.allOf()
       .map(
         (schemaNode) =>
-          `- ${schemaNode.relativePathToOutputDocumentation(
+          `- ${schemaNode.mdLinkToNodesMdDocs(
+            this.outputFileAbsolutePath()
+          )} ${schemaNode.relativePathToOutputDocumentation(
             this.outputFileAbsolutePath()
           )}`
       )
@@ -103,20 +105,22 @@ export default abstract class SchemaNode {
   // docs/markdown/INDEX.md
   relativePathToSource = () => {
     console.log(
-      `Calculate relative path to source from MD for ${this.shortId()} with source path of ${this.sourceSchemaAbsolutePath()}`
+      `Calculate relative path to source from MD for ${this.shortId()} @ ${this.outputFileAbsolutePath()} with source path of ${this.sourceSchemaAbsolutePath()}`
     );
-
-    return `${relativeSchemaPathToOtherPath(
-      this.outputFileAbsolutePath(),
-      this.sourceSchemaAbsolutePath()
+    const rel_path = `${relativePathToOtherPath(
+      this.sourceSchemaAbsolutePath(),
+      this.outputFileAbsolutePath()
     )}/${this.basename()}.schema.json`;
+
+    console.log(`Resulting path ${rel_path}`);
+    return rel_path;
   };
 
   relativePathToOutputDocumentation = (relative_to_absolute_path: string) => {
     console.log(
       `Calculate relativePathToOutputDocumentation for ${this.shortId()} in file ${relative_to_absolute_path}`
     );
-    return `${relativeSchemaPathToOtherPath(
+    return `${relativePathToOtherPath(
       this.outputFileAbsolutePath(),
       relative_to_absolute_path
     )}/${this.basename()}.md`;
@@ -138,7 +142,7 @@ export default abstract class SchemaNode {
   ];
 
   markdownHeader =
-    () => `:house: [Documentation Home](${relativeSchemaPathToOtherPath(
+    () => `:house: [Documentation Home](${relativePathToOtherPath(
       "../README.md",
       this.directory()
     )}/README.md)

@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/conversion/Conversion.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/conversion/Conversion](../../../primitives/objects/transactions/conversion/Conversion.md) ../../../primitives/objects/transactions/conversion/Conversion.md
 
 **Properties:**
 
@@ -33,7 +33,7 @@
 | trigger_id                | `STRING`                                                                                                                       | What is the id of the convertible's conversion trigger that resulted in this conversion                                                                                                                                                                                                                                                                                                                                                                                                                     | `REQUIRED` |
 | capitalization_definition | [schema/types/CapitalizationDefinition](../../../types/CapitalizationDefinition.md)                                            | If this conversion event was d on the company's capitalization as calculated at the time of conversion, please specify what stock classes, stock plans and securities were included in the calculation                                                                                                                                                                                                                                                                                                      | -          |
 
-**Source Code:** [schema/objects/transactions/conversion/ConvertibleConversion](../../../../docs/markdown/schema/objects/transactions/conversion/ConvertibleConversion.schema.json)
+**Source Code:** [schema/objects/transactions/conversion/ConvertibleConversion](../../../../../../schema/objects/transactions/conversion/ConvertibleConversion.schema.json)
 
 **Examples:**
 

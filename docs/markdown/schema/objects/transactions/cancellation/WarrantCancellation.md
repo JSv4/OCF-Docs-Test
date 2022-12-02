@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/cancellation/Cancellation.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/cancellation/Cancellation](../../../primitives/objects/transactions/cancellation/Cancellation.md) ../../../primitives/objects/transactions/cancellation/Cancellation.md
 
 **Properties:**
 
@@ -30,7 +30,7 @@
 | reason_text         | `STRING`                                                                                                                     | Reason for the cancellation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | `REQUIRED` |
 | quantity            | [schema/types/Numeric](../../../types/Numeric.md)                                                                            | Quantity of non-monetary security units cancelled                                                                                                                                                                                                                                                                                                                                                                                                                                                           | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/cancellation/WarrantCancellation](../../../../docs/markdown/schema/objects/transactions/cancellation/WarrantCancellation.schema.json)
+**Source Code:** [schema/objects/transactions/cancellation/WarrantCancellation](../../../../../../schema/objects/transactions/cancellation/WarrantCancellation.schema.json)
 
 **Examples:**
 

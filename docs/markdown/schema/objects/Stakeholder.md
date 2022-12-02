@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- ../primitives/objects/Object.md
+- [schema/primitives/objects/Object](../primitives/objects/Object.md) ../primitives/objects/Object.md
 
 **Properties:**
 
@@ -29,7 +29,7 @@
 | addresses            | [ [schema/types/Address](../types/Address.md) ]                                                                                                                                                                                                                                                                                                                                                                                                             | Addresses for the stakeholder                                                                                                      | -          |
 | tax_ids              | [ [schema/types/TaxID](../types/TaxID.md) ]                                                                                                                                                                                                                                                                                                                                                                                                                 | The tax ids for this stakeholder                                                                                                   | -          |
 
-**Source Code:** [schema/objects/Stakeholder](../../docs/markdown/schema/objects/Stakeholder.schema.json)
+**Source Code:** [schema/objects/Stakeholder](../../../../schema/objects/Stakeholder.schema.json)
 
 **Examples:**
 

@@ -16,6 +16,6 @@
 | -------------- | -------- | ------------------------------------------------------------------ | ---------- |
 | stock_class_id | `STRING` | Identifier of the StockClass object, a subject of this transaction | `REQUIRED` |
 
-**Source Code:** [schema/primitives/objects/transactions/StockClassTransaction](../../../../docs/markdown/schema/primitives/objects/transactions/StockClassTransaction.schema.json)
+**Source Code:** [schema/primitives/objects/transactions/StockClassTransaction](../../../../../../schema/primitives/objects/transactions/StockClassTransaction.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

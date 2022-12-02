@@ -17,6 +17,6 @@ _Type representation of a government identifier for tax purposes (e.g. EIN) and 
 | tax_id   | `STRING`                                    | Tax identifier as string                                         | `REQUIRED` |
 | country  | [schema/types/CountryCode](/CountryCode.md) | Issuing country code (ISO 3166-1 alpha-2) for the tax identifier | `REQUIRED` |
 
-**Source Code:** [schema/types/TaxID](../../docs/markdown/schema/types/TaxID.schema.json)
+**Source Code:** [schema/types/TaxID](../../../../schema/types/TaxID.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

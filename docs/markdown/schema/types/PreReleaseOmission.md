@@ -17,6 +17,6 @@ _Transitional type; allows an otherwise "required" field to support omission by 
 | comment  | `STRING`  | Implementation-specific, optional message about missing data | -          |
 | omitted  | `BOOLEAN` | Positive indication of intentional omission                  | `REQUIRED` |
 
-**Source Code:** [schema/types/PreReleaseOmission](../../docs/markdown/schema/types/PreReleaseOmission.schema.json)
+**Source Code:** [schema/types/PreReleaseOmission](../../../../schema/types/PreReleaseOmission.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

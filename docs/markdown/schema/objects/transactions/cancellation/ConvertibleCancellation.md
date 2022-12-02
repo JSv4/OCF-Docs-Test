@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/cancellation/Cancellation.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/cancellation/Cancellation](../../../primitives/objects/transactions/cancellation/Cancellation.md) ../../../primitives/objects/transactions/cancellation/Cancellation.md
 
 **Properties:**
 
@@ -30,7 +30,7 @@
 | reason_text         | `STRING`                                                                                                                         | Reason for the cancellation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | `REQUIRED` |
 | amount              | [schema/types/Monetary](../../../types/Monetary.md)                                                                              | Amount of monetary value cancelled                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/cancellation/ConvertibleCancellation](../../../../docs/markdown/schema/objects/transactions/cancellation/ConvertibleCancellation.schema.json)
+**Source Code:** [schema/objects/transactions/cancellation/ConvertibleCancellation](../../../../../../schema/objects/transactions/cancellation/ConvertibleCancellation.schema.json)
 
 **Examples:**
 

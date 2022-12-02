@@ -52,7 +52,7 @@ export const basenameFromSchemaPath = (schema_path: string) =>
  * @param source_file_path String - localpath to schema we want to use as a frame of reference for relative link.
  * @returns String -> Relative path from schema_path to relative_to_schema_path
  */
-export const relativeSchemaPathToOtherPath = (
+export const relativePathToOtherPath = (
   target_path: string,
   source_path: string = "./schema"
 ) => {
@@ -68,7 +68,7 @@ export const relativeSchemaPathToOtherPath = (
  * @returns String -> The relative path to the schema file in the ./schema repo dir
  */
 export const schemaPathRelativeToSchemaDir = (schema_path: string) =>
-  relativeSchemaPathToOtherPath(schema_path);
+  relativePathToOtherPath(schema_path);
 
 /**
  * MkDocs only supports using relative paths from the current MD file to the repo root. E.g. If you're lookin at a file in /schema/enums/, and you

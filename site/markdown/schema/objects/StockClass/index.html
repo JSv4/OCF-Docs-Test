@@ -3113,7 +3113,7 @@
 <p><strong>Data Type:</strong> <code>OCF Object - STOCK_CLASS</code></p>
 <p><strong>Composed From:</strong></p>
 <ul>
-<li><a href="../../../docs/markdown/schema/primitives/objects/Object.md">schema/primitives/objects/Object</a></li>
+<li><a href="../../primitives/objects/Object/">schema/primitives/objects/Object</a> ../primitives/objects/Object.md</li>
 </ul>
 <p><strong>Properties:</strong></p>
 <table>
@@ -3140,7 +3140,7 @@
 </tr>
 <tr>
 <td></td>
-<td><strong>Constant:</strong> <code>STOCK_CLASS</code></br><em>Defined in ../enums/ObjectType.md</em></td>
+<td><strong>Constant:</strong> <code>STOCK_CLASS</code></br><em>Defined in <a href="../../enums/ObjectType/">schema/enums/ObjectType.schema.json</a></em></td>
 <td>Object type field</td>
 <td>-</td>
 </tr>
@@ -3164,61 +3164,61 @@
 </tr>
 <tr>
 <td>current_shares_authorized</td>
-<td><a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></td>
+<td><a href="../../types/Numeric/">schema/types/Numeric</a></td>
 <td>The most current number of shares authorized for this stock class</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>board_approval_date</td>
-<td><a href="../OCF-Docs-Test/docs/markdown/schema/types/Date.md">schema/types/Date</a></td>
+<td><a href="../../types/Date/">schema/types/Date</a></td>
 <td>Date on which the board approved the stock class</td>
 <td>-</td>
 </tr>
 <tr>
 <td>votes_per_share</td>
-<td><strong>ONE OF the Following Types/Objs:</strong></br>&bull; <a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></br>&bull; <a href="../OCF-Docs-Test/docs/markdown/schema/types/PreReleaseOmission.md">schema/types/PreReleaseOmission</a></td>
+<td><strong>ONE OF the Following Types/Objs:</strong></br>&bull; <a href="../../types/Numeric/">schema/types/Numeric</a></br>&bull; <a href="../../types/PreReleaseOmission/">schema/types/PreReleaseOmission</a></td>
 <td>The number of votes each share of this stock class gets</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>par_value</td>
-<td><a href="../OCF-Docs-Test/docs/markdown/schema/types/Monetary.md">schema/types/Monetary</a></td>
+<td><a href="../../types/Monetary/">schema/types/Monetary</a></td>
 <td>Per-share par value of this stock class</td>
 <td>-</td>
 </tr>
 <tr>
 <td>price_per_share</td>
-<td><a href="../OCF-Docs-Test/docs/markdown/schema/types/Monetary.md">schema/types/Monetary</a></td>
+<td><a href="../../types/Monetary/">schema/types/Monetary</a></td>
 <td>Per-share price this stock class was issued for</td>
 <td>-</td>
 </tr>
 <tr>
 <td>seniority</td>
-<td><a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></td>
+<td><a href="../../types/Numeric/">schema/types/Numeric</a></td>
 <td>Seniority of the stock - determines repayment priority. Seniority is ordered by increasing number so that stock classes with a higher seniority have higher repayment priority. The following properties hold for all stock classes for a given company: </br>a) transitivity: stock classes are absolutely stackable by seniority and in increasing numerical order, </br>b) non-uniqueness: multiple stock classes can have the same Seniority number and therefore have the same liquidation/repayment order.</br>In practice, stock classes with same seniority may be created at different points in time and (for example, an extension of an existing preferred financing round), and also a new stock class can be created with seniority between two existing stock classes, in which case it is assigned some decimal number between the numbers representing seniority of the respective classes.</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>conversion_rights</td>
-<td>[ <a href="../../OCF-Docs-Test/docs/markdown/schema/types/conversion_rights/StockClassConversionRight.md">schema/types/conversion_rights/StockClassConversionRight</a> ]</td>
+<td>[ <a href="../../types/conversion_rights/StockClassConversionRight/">schema/types/conversion_rights/StockClassConversionRight</a> ]</td>
 <td>List of stock class conversion rights possible for this stock class</td>
 <td>-</td>
 </tr>
 <tr>
 <td>liquidation_preference_multiple</td>
-<td><a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></td>
+<td><a href="../../types/Numeric/">schema/types/Numeric</a></td>
 <td>The liquidation preference per share for this stock class</td>
 <td>-</td>
 </tr>
 <tr>
 <td>participation_cap_multiple</td>
-<td><a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></td>
+<td><a href="../../types/Numeric/">schema/types/Numeric</a></td>
 <td>The participation cap multiple per share for this stock class</td>
 <td>-</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Source Code:</strong> <a href="../../docs/markdown/schema/objects/StockClass.schema.json">schema/objects/StockClass</a></p>
+<p><strong>Source Code:</strong> <a href="../../../../schema/objects/StockClass.schema.json">schema/objects/StockClass</a></p>
 <p><strong>Examples:</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">[</span><span class="w"></span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p">{</span><span class="w"></span>

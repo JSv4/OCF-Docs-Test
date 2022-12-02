@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- ../primitives/files/File.md
+- [schema/primitives/files/File](../primitives/files/File.md) ../primitives/files/File.md
 
 **Properties:**
 
@@ -32,6 +32,6 @@
 | transactions_files           | [ [schema/types/File](../types/File.md) ]                                                                                                               | List of files containing lists of issuer transactions, indexed from the file containing the first such object created to the file containing the last (See separate /schema/files/transactions_file schema to validate loaded files)                     | `REQUIRED` |
 | stakeholders_files           | [ [schema/types/File](../types/File.md) ]                                                                                                               | List of files containing lists of issuer stakeholders, indexed from the file containing the first such object created to the file containing the last (See separate /schema/files/stakeholders_file schema to validate loaded files)                     | `REQUIRED` |
 
-**Source Code:** [schema/files/OCFManifestFile](../../docs/markdown/schema/files/OCFManifestFile.schema.json)
+**Source Code:** [schema/files/OCFManifestFile](../../../../schema/files/OCFManifestFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

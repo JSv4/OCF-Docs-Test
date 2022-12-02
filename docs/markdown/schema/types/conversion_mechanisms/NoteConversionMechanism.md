@@ -25,6 +25,6 @@ _Sets forth inputs and conversion mechanism of a convertible note_
 | exit_multiple            | [schema/types/Ratio](../Ratio.md)                                                                                                                                                                                             | For cash proceeds calculation during a liquidity event.                                                                   | -          |
 | conversion_mfn           | `BOOLEAN`                                                                                                                                                                                                                     | Is this an MFN (Most Favored Nations) flavored Convertible Note?                                                          | -          |
 
-**Source Code:** [schema/types/conversion_mechanisms/NoteConversionMechanism](../../../docs/markdown/schema/types/conversion_mechanisms/NoteConversionMechanism.schema.json)
+**Source Code:** [schema/types/conversion_mechanisms/NoteConversionMechanism](../../../../../schema/types/conversion_mechanisms/NoteConversionMechanism.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

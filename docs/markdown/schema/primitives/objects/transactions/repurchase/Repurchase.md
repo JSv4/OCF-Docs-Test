@@ -19,6 +19,6 @@
 | consideration_text  | `STRING`                                               | Unstructured text description of consideration provided in exchange for security repurchase | -          |
 | balance_security_id | `STRING`                                               | Identifier for the security that holds the remainder balance (for partial repurchases)      | -          |
 
-**Source Code:** [schema/primitives/objects/transactions/repurchase/Repurchase](../../../../../docs/markdown/schema/primitives/objects/transactions/repurchase/Repurchase.schema.json)
+**Source Code:** [schema/primitives/objects/transactions/repurchase/Repurchase](../../../../../../../schema/primitives/objects/transactions/repurchase/Repurchase.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- ../primitives/files/File.md
+- [schema/primitives/files/File](../primitives/files/File.md) ../primitives/files/File.md
 
 **Properties:**
 
@@ -21,6 +21,6 @@
 | file_type | **Constant:** `OCF_VALUATIONS_FILE`</br>_Defined in [schema/enums/FileType.schema.json](../enums/FileType.md)_ | Object type field             | `REQUIRED` |
 | items     | [ [schema/objects/Valuation](../objects/Valuation.md) ]                                                        | List of OCF valuation objects | `REQUIRED` |
 
-**Source Code:** [schema/files/ValuationsFile](../../docs/markdown/schema/files/ValuationsFile.schema.json)
+**Source Code:** [schema/files/ValuationsFile](../../../../schema/files/ValuationsFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/issuance/Issuance.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/issuance/Issuance](../../../primitives/objects/transactions/issuance/Issuance.md) ../../../primitives/objects/transactions/issuance/Issuance.md
 
 **Properties:**
 
@@ -40,7 +40,7 @@
 | expiration_date              | **ONE OF the Following Types/Objs:**</br>&bull; `NULL` _()_</br>&bull; [schema/types/Date](../../../types/Date.md)                                 | Expiration date of the plan security                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | `REQUIRED` |
 | termination_exercise_windows | [ [schema/types/TerminationWindow](../../../types/TerminationWindow.md) ]                                                                          | Exercise periods applicable to plan security after a termination for a given, enumerated reason                                                                                                                                                                                                                                                                                                                                                                                                             | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/issuance/PlanSecurityIssuance](../../../../docs/markdown/schema/objects/transactions/issuance/PlanSecurityIssuance.schema.json)
+**Source Code:** [schema/objects/transactions/issuance/PlanSecurityIssuance](../../../../../../schema/objects/transactions/issuance/PlanSecurityIssuance.schema.json)
 
 **Examples:**
 

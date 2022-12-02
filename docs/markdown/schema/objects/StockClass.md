@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- ../primitives/objects/Object.md
+- [schema/primitives/objects/Object](../primitives/objects/Object.md) ../primitives/objects/Object.md
 
 **Properties:**
 
@@ -34,7 +34,7 @@
 | liquidation_preference_multiple | [schema/types/Numeric](../types/Numeric.md)                                                                                                                              | The liquidation preference per share for this stock class                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | -          |
 | participation_cap_multiple      | [schema/types/Numeric](../types/Numeric.md)                                                                                                                              | The participation cap multiple per share for this stock class                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | -          |
 
-**Source Code:** [schema/objects/StockClass](../../docs/markdown/schema/objects/StockClass.schema.json)
+**Source Code:** [schema/objects/StockClass](../../../../schema/objects/StockClass.schema.json)
 
 **Examples:**
 

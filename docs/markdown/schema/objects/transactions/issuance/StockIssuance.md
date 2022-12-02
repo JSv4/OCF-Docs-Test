@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/issuance/Issuance.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/issuance/Issuance](../../../primitives/objects/transactions/issuance/Issuance.md) ../../../primitives/objects/transactions/issuance/Issuance.md
 
 **Properties:**
 
@@ -38,7 +38,7 @@
 | cost_basis              | **ONE OF the Following Types/Objs:**</br>&bull; [schema/types/Monetary](../../../types/Monetary.md)</br>&bull; [schema/types/PreReleaseOmission](../../../types/PreReleaseOmission.md) | The cost basis for this particular stock                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | `REQUIRED` |
 | stock_legend_ids        | [`STRING`]                                                                                                                                                                             | List of stock legend ids that apply to this stock                                                                                                                                                                                                                                                                                                                                                                                                                                                           | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/issuance/StockIssuance](../../../../docs/markdown/schema/objects/transactions/issuance/StockIssuance.schema.json)
+**Source Code:** [schema/objects/transactions/issuance/StockIssuance](../../../../../../schema/objects/transactions/issuance/StockIssuance.schema.json)
 
 **Examples:**
 

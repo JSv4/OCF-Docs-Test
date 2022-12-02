@@ -12,9 +12,9 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
 
 **Properties:**
 
@@ -27,7 +27,7 @@
 | security_id          | `STRING`                                                                                                              | Identifier for the security (stock, plan security, warrant, or convertible) by which it can be referenced by other transaction objects. Note that while this identifier is created with an issuance object, it should be different than the issuance object's `id` field which identifies the issuance transaction object itself. All future transactions on the security (e.g. acceptance, transfer, cancel, etc.) must reference this `security_id` to qualify which security the transaction applies to. | `REQUIRED` |
 | vesting_condition_id | `STRING`                                                                                                              | Reference to the `id` of a VestingCondition in this security's VestingTerms. This condition should have a trigger type of `VESTING_EVENT`.                                                                                                                                                                                                                                                                                                                                                                  | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/vesting/VestingEvent](../../../../docs/markdown/schema/objects/transactions/vesting/VestingEvent.schema.json)
+**Source Code:** [schema/objects/transactions/vesting/VestingEvent](../../../../../../schema/objects/transactions/vesting/VestingEvent.schema.json)
 
 **Examples:**
 

@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- ../primitives/objects/Object.md
+- [schema/primitives/objects/Object](../primitives/objects/Object.md) ../primitives/objects/Object.md
 
 **Properties:**
 
@@ -24,7 +24,7 @@
 | name     | `STRING`                                                                                                             | Name for the stock legend template                              | `REQUIRED` |
 | text     | `STRING`                                                                                                             | The full text of the stock legend                               | `REQUIRED` |
 
-**Source Code:** [schema/objects/StockLegendTemplate](../../docs/markdown/schema/objects/StockLegendTemplate.schema.json)
+**Source Code:** [schema/objects/StockLegendTemplate](../../../../schema/objects/StockLegendTemplate.schema.json)
 
 **Examples:**
 

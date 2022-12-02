@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/reissuance/Reissuance.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/reissuance/Reissuance](../../../primitives/objects/transactions/reissuance/Reissuance.md) ../../../primitives/objects/transactions/reissuance/Reissuance.md
 
 **Properties:**
 
@@ -30,7 +30,7 @@
 | split_transaction_id   | `STRING`                                                                                                                 | When stock is reissued as a result of a stock split, this field contains id of the respective stock class split transaction. It is not set otherwise.                                                                                                                                                                                                                                                                                                                                                       | -          |
 | reason_text            | `STRING`                                                                                                                 | Free-form human-readable reason for stock reissuance                                                                                                                                                                                                                                                                                                                                                                                                                                                        | -          |
 
-**Source Code:** [schema/objects/transactions/reissuance/StockReissuance](../../../../docs/markdown/schema/objects/transactions/reissuance/StockReissuance.schema.json)
+**Source Code:** [schema/objects/transactions/reissuance/StockReissuance](../../../../../../schema/objects/transactions/reissuance/StockReissuance.schema.json)
 
 **Examples:**
 

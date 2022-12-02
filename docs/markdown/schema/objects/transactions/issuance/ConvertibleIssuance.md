@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/issuance/Issuance.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/issuance/Issuance](../../../primitives/objects/transactions/issuance/Issuance.md) ../../../primitives/objects/transactions/issuance/Issuance.md
 
 **Properties:**
 
@@ -37,7 +37,7 @@
 | pro_rata                | [schema/types/Numeric](../../../types/Numeric.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | What pro-rata (if any) is the holder entitled to buy at the next round?                                                                                                                                                                                                                                                                                                                                                                                                                                     | -          |
 | seniority               | `INTEGER`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | If different convertible instruments have seniorty over one another, use this value to build a seniority stack, with 1 being highest seniority and equal seniority values assumed to be equal priority                                                                                                                                                                                                                                                                                                      | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/issuance/ConvertibleIssuance](../../../../docs/markdown/schema/objects/transactions/issuance/ConvertibleIssuance.schema.json)
+**Source Code:** [schema/objects/transactions/issuance/ConvertibleIssuance](../../../../../../schema/objects/transactions/issuance/ConvertibleIssuance.schema.json)
 
 **Examples:**
 

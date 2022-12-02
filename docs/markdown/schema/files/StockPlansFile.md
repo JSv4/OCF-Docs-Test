@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- ../primitives/files/File.md
+- [schema/primitives/files/File](../primitives/files/File.md) ../primitives/files/File.md
 
 **Properties:**
 
@@ -21,6 +21,6 @@
 | file_type | **Constant:** `OCF_STOCK_PLANS_FILE`</br>_Defined in [schema/enums/FileType.schema.json](../enums/FileType.md)_ | Object type field              | `REQUIRED` |
 | items     | [ [schema/objects/StockPlan](../objects/StockPlan.md) ]                                                         | List of OCF stock plan objects | `REQUIRED` |
 
-**Source Code:** [schema/files/StockPlansFile](../../docs/markdown/schema/files/StockPlansFile.schema.json)
+**Source Code:** [schema/files/StockPlansFile](../../../../schema/files/StockPlansFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

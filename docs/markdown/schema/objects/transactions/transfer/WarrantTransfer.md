@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/transfer/Transfer.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/transfer/Transfer](../../../primitives/objects/transactions/transfer/Transfer.md) ../../../primitives/objects/transactions/transfer/Transfer.md
 
 **Properties:**
 
@@ -31,7 +31,7 @@
 | resulting_security_ids | [`STRING`]                                                                                                               | Array of identifiers for new security (or securities) created as a result of the transaction                                                                                                                                                                                                                                                                                                                                                                                                                | `REQUIRED` |
 | quantity               | [schema/types/Numeric](../../../types/Numeric.md)                                                                        | Quantity of non-monetary security units transferred                                                                                                                                                                                                                                                                                                                                                                                                                                                         | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/transfer/WarrantTransfer](../../../../docs/markdown/schema/objects/transactions/transfer/WarrantTransfer.schema.json)
+**Source Code:** [schema/objects/transactions/transfer/WarrantTransfer](../../../../../../schema/objects/transactions/transfer/WarrantTransfer.schema.json)
 
 **Examples:**
 

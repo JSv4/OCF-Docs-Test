@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- ../primitives/files/File.md
+- [schema/primitives/files/File](../primitives/files/File.md) ../primitives/files/File.md
 
 **Properties:**
 
@@ -21,6 +21,6 @@
 | file_type | **Constant:** `OCF_STAKEHOLDERS_FILE`</br>_Defined in [schema/enums/FileType.schema.json](../enums/FileType.md)_ | Object type field               | `REQUIRED` |
 | items     | [ [schema/objects/Stakeholder](../objects/Stakeholder.md) ]                                                      | List of OCF stakeholder objects | `REQUIRED` |
 
-**Source Code:** [schema/files/StakeholdersFile](../../docs/markdown/schema/files/StakeholdersFile.schema.json)
+**Source Code:** [schema/files/StakeholdersFile](../../../../schema/files/StakeholdersFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

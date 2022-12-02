@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/acceptance/Acceptance.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/acceptance/Acceptance](../../../primitives/objects/transactions/acceptance/Acceptance.md) ../../../primitives/objects/transactions/acceptance/Acceptance.md
 
 **Properties:**
 
@@ -27,7 +27,7 @@
 | date        | [schema/types/Date](../../../types/Date.md)                                                                              | Date on which the transaction occurred                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | `REQUIRED` |
 | security_id | `STRING`                                                                                                                 | Identifier for the security (stock, plan security, warrant, or convertible) by which it can be referenced by other transaction objects. Note that while this identifier is created with an issuance object, it should be different than the issuance object's `id` field which identifies the issuance transaction object itself. All future transactions on the security (e.g. acceptance, transfer, cancel, etc.) must reference this `security_id` to qualify which security the transaction applies to. | `REQUIRED` |
 
-**Source Code:** [schema/objects/transactions/acceptance/StockAcceptance](../../../../docs/markdown/schema/objects/transactions/acceptance/StockAcceptance.schema.json)
+**Source Code:** [schema/objects/transactions/acceptance/StockAcceptance](../../../../../../schema/objects/transactions/acceptance/StockAcceptance.schema.json)
 
 **Examples:**
 

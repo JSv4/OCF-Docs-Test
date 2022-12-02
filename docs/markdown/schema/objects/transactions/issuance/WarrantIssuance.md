@@ -12,10 +12,10 @@
 
 **Composed From:**
 
-- ../../../primitives/objects/Object.md
-- ../../../primitives/objects/transactions/Transaction.md
-- ../../../primitives/objects/transactions/SecurityTransaction.md
-- ../../../primitives/objects/transactions/issuance/Issuance.md
+- [schema/primitives/objects/Object](../../../primitives/objects/Object.md) ../../../primitives/objects/Object.md
+- [schema/primitives/objects/transactions/Transaction](../../../primitives/objects/transactions/Transaction.md) ../../../primitives/objects/transactions/Transaction.md
+- [schema/primitives/objects/transactions/SecurityTransaction](../../../primitives/objects/transactions/SecurityTransaction.md) ../../../primitives/objects/transactions/SecurityTransaction.md
+- [schema/primitives/objects/transactions/issuance/Issuance](../../../primitives/objects/transactions/issuance/Issuance.md) ../../../primitives/objects/transactions/issuance/Issuance.md
 
 **Properties:**
 
@@ -38,7 +38,7 @@
 | warrant_expiration_date | [schema/types/Date](../../../types/Date.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | What is expiration date of the warrant (if applicable)                                                                                                                                                                                                                                                                                                                                                                                                                                                      | -          |
 | vesting_terms_id        | `STRING`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Identifier of the VestingTerms to which this security is subject. If not present, security is fully vested on issuance.                                                                                                                                                                                                                                                                                                                                                                                     | -          |
 
-**Source Code:** [schema/objects/transactions/issuance/WarrantIssuance](../../../../docs/markdown/schema/objects/transactions/issuance/WarrantIssuance.schema.json)
+**Source Code:** [schema/objects/transactions/issuance/WarrantIssuance](../../../../../../schema/objects/transactions/issuance/WarrantIssuance.schema.json)
 
 **Examples:**
 

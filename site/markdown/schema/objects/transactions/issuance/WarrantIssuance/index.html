@@ -3117,10 +3117,10 @@
 <p><strong>Data Type:</strong> <code>OCF Object - TX_WARRANT_ISSUANCE</code></p>
 <p><strong>Composed From:</strong></p>
 <ul>
-<li><a href="../../../docs/markdown/schema/primitives/objects/Object.md">schema/primitives/objects/Object</a></li>
-<li><a href="../../../../docs/markdown/schema/primitives/objects/transactions/Transaction.md">schema/primitives/objects/transactions/Transaction</a></li>
-<li><a href="../../../../docs/markdown/schema/primitives/objects/transactions/SecurityTransaction.md">schema/primitives/objects/transactions/SecurityTransaction</a></li>
-<li><a href="../../../../../docs/markdown/schema/primitives/objects/transactions/issuance/Issuance.md">schema/primitives/objects/transactions/issuance/Issuance</a></li>
+<li><a href="../../../../primitives/objects/Object/">schema/primitives/objects/Object</a> ../../../primitives/objects/Object.md</li>
+<li><a href="../../../../primitives/objects/transactions/Transaction/">schema/primitives/objects/transactions/Transaction</a> ../../../primitives/objects/transactions/Transaction.md</li>
+<li><a href="../../../../primitives/objects/transactions/SecurityTransaction/">schema/primitives/objects/transactions/SecurityTransaction</a> ../../../primitives/objects/transactions/SecurityTransaction.md</li>
+<li><a href="../../../../primitives/objects/transactions/issuance/Issuance/">schema/primitives/objects/transactions/issuance/Issuance</a> ../../../primitives/objects/transactions/issuance/Issuance.md</li>
 </ul>
 <p><strong>Properties:</strong></p>
 <table>
@@ -3147,13 +3147,13 @@
 </tr>
 <tr>
 <td></td>
-<td><strong>Constant:</strong> <code>TX_WARRANT_ISSUANCE</code></br><em>Defined in ../../../enums/ObjectType.md</em></td>
+<td><strong>Constant:</strong> <code>TX_WARRANT_ISSUANCE</code></br><em>Defined in <a href="../../../../enums/ObjectType/">schema/enums/ObjectType.schema.json</a></em></td>
 <td>Object type field</td>
 <td>-</td>
 </tr>
 <tr>
 <td>date</td>
-<td><a href="../jman/source/OCF-Docs-Test/docs/markdown/schema/types/Date.md">schema/types/Date</a></td>
+<td><a href="../../../../types/Date/">schema/types/Date</a></td>
 <td>Date on which the transaction occurred</td>
 <td><code>REQUIRED</code></td>
 </tr>
@@ -3177,7 +3177,7 @@
 </tr>
 <tr>
 <td>board_approval_date</td>
-<td><a href="../jman/source/OCF-Docs-Test/docs/markdown/schema/types/Date.md">schema/types/Date</a></td>
+<td><a href="../../../../types/Date/">schema/types/Date</a></td>
 <td>Date of board approval for the security</td>
 <td>-</td>
 </tr>
@@ -3189,37 +3189,37 @@
 </tr>
 <tr>
 <td>security_law_exemptions</td>
-<td>[ <a href="../jman/source/OCF-Docs-Test/docs/markdown/schema/types/SecurityExemption.md">schema/types/SecurityExemption</a> ]</td>
+<td>[ <a href="../../../../types/SecurityExemption/">schema/types/SecurityExemption</a> ]</td>
 <td>List of security law exemptions (and applicable jurisdictions) for this security</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>quantity</td>
-<td><a href="../../../schema/types/Numeric.md">schema/types/Numeric</a></td>
+<td><a href="../../../../types/Numeric/">schema/types/Numeric</a></td>
 <td>Quantity of shares the warrant is exercisable for</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>exercise_price</td>
-<td><a href="../jman/source/OCF-Docs-Test/docs/markdown/schema/types/Monetary.md">schema/types/Monetary</a></td>
+<td><a href="../../../../types/Monetary/">schema/types/Monetary</a></td>
 <td>The exercise price of the warrant</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>purchase_price</td>
-<td><a href="../jman/source/OCF-Docs-Test/docs/markdown/schema/types/Monetary.md">schema/types/Monetary</a></td>
+<td><a href="../../../../types/Monetary/">schema/types/Monetary</a></td>
 <td>Actual purchase price of the warrant (sum up purported value of all consideration, including in-kind)</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>exercise_triggers</td>
-<td><strong>Array of Any Of Following Types/Objs:</strong></br>&bull; <a href="../../jman/source/OCF-Docs-Test/docs/markdown/schema/types/conversion_triggers/AutomaticConversionOnConditionTrigger.md">schema/types/conversion_triggers/AutomaticConversionOnConditionTrigger</a></br>&bull; <a href="../../jman/source/OCF-Docs-Test/docs/markdown/schema/types/conversion_triggers/AutomaticConversionOnDateTrigger.md">schema/types/conversion_triggers/AutomaticConversionOnDateTrigger</a></br>&bull; <a href="../../jman/source/OCF-Docs-Test/docs/markdown/schema/types/conversion_triggers/ElectiveConversionAtWillTrigger.md">schema/types/conversion_triggers/ElectiveConversionAtWillTrigger</a></br>&bull; <a href="../../jman/source/OCF-Docs-Test/docs/markdown/schema/types/conversion_triggers/ElectiveConversionInDateRangeTrigger.md">schema/types/conversion_triggers/ElectiveConversionInDateRangeTrigger</a></br>&bull; <a href="../../jman/source/OCF-Docs-Test/docs/markdown/schema/types/conversion_triggers/ElectiveConversionOnConditionTrigger.md">schema/types/conversion_triggers/ElectiveConversionOnConditionTrigger</a></br>&bull; <a href="../../jman/source/OCF-Docs-Test/docs/markdown/schema/types/conversion_triggers/UnspecifiedConversionTrigger.md">schema/types/conversion_triggers/UnspecifiedConversionTrigger</a></td>
+<td><strong>Array of Any Of Following Types/Objs:</strong></br>&bull; <a href="../../../../types/conversion_triggers/AutomaticConversionOnConditionTrigger/">schema/types/conversion_triggers/AutomaticConversionOnConditionTrigger</a></br>&bull; <a href="../../../../types/conversion_triggers/AutomaticConversionOnDateTrigger/">schema/types/conversion_triggers/AutomaticConversionOnDateTrigger</a></br>&bull; <a href="../../../../types/conversion_triggers/ElectiveConversionAtWillTrigger/">schema/types/conversion_triggers/ElectiveConversionAtWillTrigger</a></br>&bull; <a href="../../../../types/conversion_triggers/ElectiveConversionInDateRangeTrigger/">schema/types/conversion_triggers/ElectiveConversionInDateRangeTrigger</a></br>&bull; <a href="../../../../types/conversion_triggers/ElectiveConversionOnConditionTrigger/">schema/types/conversion_triggers/ElectiveConversionOnConditionTrigger</a></br>&bull; <a href="../../../../types/conversion_triggers/UnspecifiedConversionTrigger/">schema/types/conversion_triggers/UnspecifiedConversionTrigger</a></td>
 <td>In event the Warrant can convert due to trigger events (e.g. Maturity, Next Qualified Financing, Change of Control, at Election of Holder), what are the terms?</td>
 <td><code>REQUIRED</code></td>
 </tr>
 <tr>
 <td>warrant_expiration_date</td>
-<td><a href="../jman/source/OCF-Docs-Test/docs/markdown/schema/types/Date.md">schema/types/Date</a></td>
+<td><a href="../../../../types/Date/">schema/types/Date</a></td>
 <td>What is expiration date of the warrant (if applicable)</td>
 <td>-</td>
 </tr>
@@ -3231,7 +3231,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Source Code:</strong> <a href="../../../../docs/markdown/schema/objects/transactions/issuance/WarrantIssuance.schema.json">schema/objects/transactions/issuance/WarrantIssuance</a></p>
+<p><strong>Source Code:</strong> <a href="../../../../../../schema/objects/transactions/issuance/WarrantIssuance.schema.json">schema/objects/transactions/issuance/WarrantIssuance</a></p>
 <p><strong>Examples:</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">[</span><span class="w"></span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p">{</span><span class="w"></span>

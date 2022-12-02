@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- ../primitives/objects/Object.md
+- [schema/primitives/objects/Object](../primitives/objects/Object.md) ../primitives/objects/Object.md
 
 **Properties:**
 
@@ -27,7 +27,7 @@
 | effective_date      | [schema/types/Date](../types/Date.md)                                                                                | Date on which this valuation is first valid                                                                                                         | `REQUIRED` |
 | valuation_type      | `Enum - Valuation Type`</br></br>_Description:_ Enumeration of valuation types</br></br>**ONE OF:** </br>&bull; 409A | Seam for supporting different types of valuations in future versions                                                                                | `REQUIRED` |
 
-**Source Code:** [schema/objects/Valuation](../../docs/markdown/schema/objects/Valuation.schema.json)
+**Source Code:** [schema/objects/Valuation](../../../../schema/objects/Valuation.schema.json)
 
 **Examples:**
 

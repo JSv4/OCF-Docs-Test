@@ -12,7 +12,7 @@
 
 **Composed From:**
 
-- ../primitives/files/File.md
+- [schema/primitives/files/File](../primitives/files/File.md) ../primitives/files/File.md
 
 **Properties:**
 
@@ -21,6 +21,6 @@
 | file_type | **Constant:** `OCF_STOCK_LEGEND_TEMPLATES_FILE`</br>_Defined in [schema/enums/FileType.schema.json](../enums/FileType.md)_ | Object type field                         | `REQUIRED` |
 | items     | [ [schema/objects/StockLegendTemplate](../objects/StockLegendTemplate.md) ]                                                | List of OCF stock legend template objects | `REQUIRED` |
 
-**Source Code:** [schema/files/StockLegendTemplatesFile](../../docs/markdown/schema/files/StockLegendTemplatesFile.schema.json)
+**Source Code:** [schema/files/StockLegendTemplatesFile](../../../../schema/files/StockLegendTemplatesFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

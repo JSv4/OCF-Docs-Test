@@ -20,6 +20,6 @@ _Sets forth inputs and conversion mechanism of a SAFE (mirrors the flavors and i
 | exit_multiple            | [schema/types/Ratio](../Ratio.md)           | For cash proceeds calculation during a liquidity event.                                                                   | -          |
 | conversion_mfn           | `BOOLEAN`                                   | Is this an MFN flavored SAFE?                                                                                             | -          |
 
-**Source Code:** [schema/types/conversion_mechanisms/SAFEConversionMechanism](../../../docs/markdown/schema/types/conversion_mechanisms/SAFEConversionMechanism.schema.json)
+**Source Code:** [schema/types/conversion_mechanisms/SAFEConversionMechanism](../../../../../schema/types/conversion_mechanisms/SAFEConversionMechanism.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

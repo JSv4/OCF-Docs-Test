@@ -12,6 +12,6 @@
 
 **Value:** `STRING` - _Must Match Regex Pattern: `^[A-Z0-9]{1,3}$`_
 
-**Source Code:** [schema/types/CountrySubdivisionCode](../../docs/markdown/schema/types/CountrySubdivisionCode.schema.json)
+**Source Code:** [schema/types/CountrySubdivisionCode](../../../../schema/types/CountrySubdivisionCode.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.
