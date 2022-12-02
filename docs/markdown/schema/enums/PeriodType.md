@@ -10,6 +10,6 @@
 
 **ONE OF:**</br>&bull; DAYS </br>&bull; MONTHS </br>&bull; YEARS
 
-**Source Code:** [schema/enums/PeriodType](../../../../../../../../schema/enums/PeriodType.schema.json)
+**Source Code:** [schema/enums/PeriodType](../../docs/markdown/schema/enums/PeriodType.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

@@ -32,9 +32,9 @@ export default class ObjectConstProperty extends InlineProperty {
     );
 
   markdownTableType = (inMdFileAtPath: string) =>
-    `**Constant:** \`${this.const().toUpperCase()}\`</br>_Defined in ${this.objectTypeEnumSchemaNode().relativePathToOutputDocumentation(
+    `**Constant:** \`${this.const().toUpperCase()}\`</br>_Defined in [${this.objectTypeEnumSchemaNode().shortId()}.schema.json](${this.objectTypeEnumSchemaNode().relativePathToOutputDocumentation(
       inMdFileAtPath
-    )}_`;
+    )})_`;
 
   markdownTableDescription = () => "Object type field";
 }

@@ -10,6 +10,6 @@
 
 **ONE OF:**</br>&bull; STOCK_PLAN </br>&bull; STOCK </br>&bull; WARRANT </br>&bull; CONVERTIBLE
 
-**Source Code:** [schema/enums/ParentSecurityType](../../../../../../../../schema/enums/ParentSecurityType.schema.json)
+**Source Code:** [schema/enums/ParentSecurityType](../../docs/markdown/schema/enums/ParentSecurityType.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

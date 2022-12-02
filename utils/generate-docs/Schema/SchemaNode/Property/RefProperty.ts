@@ -30,8 +30,5 @@ export default class RefProperty extends Property {
   }
 
   markdownTableType = (inMdFileAtPath: string) =>
-    this.referenced.markdownTableType(this.outputPath(inMdFileAtPath));
-
-  outputPath = (inMdFileAtPath: string) =>
-    this.referenced.relativePathToOutputDocumentation(inMdFileAtPath);
+    this.referenced.markdownTableType(inMdFileAtPath);
 }

@@ -12,15 +12,15 @@
 
 **Composed From:**
 
-- [schema/primitives/files/File](../../../docs/markdown/schema/primitives/files/File.md)
+- ../primitives/files/File.md
 
 **Properties:**
 
-| Property  | Type                                                                                             | Description                       | Required   |
-| --------- | ------------------------------------------------------------------------------------------------ | --------------------------------- | ---------- |
-| file_type | **Constant:** `OCF_VESTING_TERMS_FILE`</br>_Defined in ../enums/FileType.md_                     | Object type field                 | `REQUIRED` |
-| items     | [ [schema/objects/VestingTerms](../OCF-Docs-Test/docs/markdown/schema/objects/VestingTerms.md) ] | List of OCF vesting terms objects | `REQUIRED` |
+| Property  | Type                                                                                                              | Description                       | Required   |
+| --------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------- | ---------- |
+| file_type | **Constant:** `OCF_VESTING_TERMS_FILE`</br>_Defined in [schema/enums/FileType.schema.json](../enums/FileType.md)_ | Object type field                 | `REQUIRED` |
+| items     | [ [schema/objects/VestingTerms](../objects/VestingTerms.md) ]                                                     | List of OCF vesting terms objects | `REQUIRED` |
 
-**Source Code:** [schema/files/VestingTermsFile](../../../../../../../../schema/files/VestingTermsFile.schema.json)
+**Source Code:** [schema/files/VestingTermsFile](../../docs/markdown/schema/files/VestingTermsFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

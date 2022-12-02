@@ -10,6 +10,6 @@
 
 **ONE OF:**</br>&bull; HOME </br>&bull; MOBILE </br>&bull; BUSINESS </br>&bull; OTHER
 
-**Source Code:** [schema/enums/PhoneType](../../../../../../../../schema/enums/PhoneType.schema.json)
+**Source Code:** [schema/enums/PhoneType](../../docs/markdown/schema/enums/PhoneType.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

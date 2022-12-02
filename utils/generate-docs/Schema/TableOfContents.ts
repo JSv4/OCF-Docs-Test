@@ -21,6 +21,7 @@ export default class TableOfContents {
     const readmeString = fse
       .readFileSync(path.join(repoRootDir, repoPathToMd))
       .toString();
+
     return fse.writeFile(
       path.join(repoRootDir, repoPathToMd),
       tableOfContents.replaceTocInReadmeString(readmeString, repoPathToMd)

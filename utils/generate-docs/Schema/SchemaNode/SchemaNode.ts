@@ -1,8 +1,5 @@
 import path from "node:path";
-import {
-  relativeSchemaPathToOtherPath,
-  relativeSchemaPathToRepoRoot,
-} from "../../../schema-utils/PathTools.js";
+import { relativeSchemaPathToOtherPath } from "../../../schema-utils/PathTools.js";
 import { markdownTable } from "markdown-table";
 import { format } from "date-fns";
 
@@ -45,11 +42,13 @@ export default abstract class SchemaNode {
         )
       : [];
 
-  protected allOfMarkdown = (in_markdown_file_path: string): string =>
+  protected allOfMarkdown = (): string =>
     this.allOf()
       .map(
         (schemaNode) =>
-          `- ${schemaNode.markdownDocumentationLink(schemaNode.directory())}`
+          `- ${schemaNode.relativePathToOutputDocumentation(
+            this.outputFileAbsolutePath()
+          )}`
       )
       .join("\n");
 
@@ -88,18 +87,6 @@ export default abstract class SchemaNode {
 
   description = () => this.json["description"];
 
-  sourcePath = () => {
-    console.log(`Dir for id ${this.id()}: ${this.directory()} `);
-    console.log(
-      `\tRelative path to root: ${relativeSchemaPathToRepoRoot(
-        this.directory()
-      )}`
-    );
-    return `${relativeSchemaPathToRepoRoot(
-      this.directory()
-    )}/${this.shortId()}.schema.json`;
-  };
-
   /**
    * Within the resulting /docs folder, what is the absolute path for the resulting markdown file when written to disk?
    * @returns "absolute" path from the /docs folder to resulting MD.
@@ -110,22 +97,30 @@ export default abstract class SchemaNode {
    * Using repo root as root, what is the absolute path of the schema used to generate this MD file?
    * @returns "absolute" path from the repo root to the source schema use to generate the MD.
    */
-  sourceSchemaAbsolutePath = () => `/${this.shortId()}.schema.json`;
+  sourceSchemaAbsolutePath = () => `${this.shortId()}.schema.json`;
 
-  relativePathToSource = () =>
-    `${relativeSchemaPathToOtherPath(
-      this.sourceSchemaAbsolutePath(),
-      this.outputFileAbsolutePath()
+  // schema/primitives/types/conversion_rights/ConversionRight.schema.json
+  // docs/markdown/INDEX.md
+  relativePathToSource = () => {
+    console.log(
+      `Calculate relative path to source from MD for ${this.shortId()} with source path of ${this.sourceSchemaAbsolutePath()}`
+    );
+
+    return `${relativeSchemaPathToOtherPath(
+      this.outputFileAbsolutePath(),
+      this.sourceSchemaAbsolutePath()
     )}/${this.basename()}.schema.json`;
+  };
 
-  relativePathToOutputDocumentation = (relative_to_absolute_path: string) =>
-    `${relativeSchemaPathToOtherPath(
+  relativePathToOutputDocumentation = (relative_to_absolute_path: string) => {
+    console.log(
+      `Calculate relativePathToOutputDocumentation for ${this.shortId()} in file ${relative_to_absolute_path}`
+    );
+    return `${relativeSchemaPathToOtherPath(
       this.outputFileAbsolutePath(),
       relative_to_absolute_path
     )}/${this.basename()}.md`;
-
-  documentationPath = () =>
-    `${relativeSchemaPathToRepoRoot(this.directory())}/${this.shortId()}.md`;
+  };
 
   propertiesJson = () => this.json["properties"];
 
@@ -159,7 +154,7 @@ export default abstract class SchemaNode {
       this.supplementalMarkdowns().length > 0
         ? this.supplementalMarkdowns()
         : null,
-      `**Source Code:** ${this.markdownSourceLink()}`,
+      `**Source Code:** ${this.mdLinkToSourceSchema()}`,
       this.markdownExamples() ? this.markdownExamples() : null,
       `Copyright © ${format(new Date(), "Y")} Open Cap Table Coalition.`,
     ]
@@ -185,10 +180,10 @@ export default abstract class SchemaNode {
 
   abstract markdownOutput(): string;
 
-  markdownSourceLink = () =>
+  mdLinkToSourceSchema = () =>
     `[${this.shortId()}](${this.relativePathToSource()})`;
 
-  markdownDocumentationLink = (relative_to_absolute_path: string) =>
+  mdLinkToNodesMdDocs = (relative_to_absolute_path: string) =>
     `[${this.shortId()}](${this.relativePathToOutputDocumentation(
       relative_to_absolute_path
     )})`;

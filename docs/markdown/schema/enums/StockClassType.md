@@ -10,6 +10,6 @@
 
 **ONE OF:**</br>&bull; COMMON </br>&bull; PREFERRED
 
-**Source Code:** [schema/enums/StockClassType](../../../../../../../../schema/enums/StockClassType.schema.json)
+**Source Code:** [schema/enums/StockClassType](../../docs/markdown/schema/enums/StockClassType.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

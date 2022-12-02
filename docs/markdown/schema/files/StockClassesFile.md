@@ -12,15 +12,15 @@
 
 **Composed From:**
 
-- [schema/primitives/files/File](../../../docs/markdown/schema/primitives/files/File.md)
+- ../primitives/files/File.md
 
 **Properties:**
 
-| Property  | Type                                                                                         | Description                     | Required   |
-| --------- | -------------------------------------------------------------------------------------------- | ------------------------------- | ---------- |
-| file_type | **Constant:** `OCF_STOCK_CLASSES_FILE`</br>_Defined in ../enums/FileType.md_                 | Object type field               | `REQUIRED` |
-| items     | [ [schema/objects/StockClass](../OCF-Docs-Test/docs/markdown/schema/objects/StockClass.md) ] | List of OCF stock class objects | `REQUIRED` |
+| Property  | Type                                                                                                              | Description                     | Required   |
+| --------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------- | ---------- |
+| file_type | **Constant:** `OCF_STOCK_CLASSES_FILE`</br>_Defined in [schema/enums/FileType.schema.json](../enums/FileType.md)_ | Object type field               | `REQUIRED` |
+| items     | [ [schema/objects/StockClass](../objects/StockClass.md) ]                                                         | List of OCF stock class objects | `REQUIRED` |
 
-**Source Code:** [schema/files/StockClassesFile](../../../../../../../../schema/files/StockClassesFile.schema.json)
+**Source Code:** [schema/files/StockClassesFile](../../docs/markdown/schema/files/StockClassesFile.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.

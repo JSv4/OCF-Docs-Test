@@ -102,17 +102,3 @@ export const schemaUrlFromRepoPath = (
   `${repo_url_root}/${tag}/schema${basenameRelativePathToSchemaDir(
     schema_path
   )}.schema.json`;
-
-/**
- * Given the local path to the schema, return the absolute url to the schema markdown documentation in the repo.
- * @param schema_path String -> Local path to the schema
- * @param tag String -> What branch tag should be appended to the repo root url? Lets us specify a specific version to view (main by default).
- * @returns String -> absolute url to the schema markdown documentation in the repo.
- */
-export const schemaDocumentationUrlFromRepoPath = (
-  schema_path: string,
-  tag: string = "main"
-) =>
-  `${repo_url_root}/${tag}/docs/schema${basenameRelativePathToSchemaDir(
-    schema_path
-  )}.md`;
