@@ -691,7 +691,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jsv4.github.io/OCF-Docs-Test/markdown/tutorials/transfers/Transfers/</loc>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/supplements/Architecture/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/supplements/DesignPatterns/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/supplements/DeveloperInfo/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/tutorials/options/Options/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/tutorials/quickstart/NewIssuer/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsv4.github.io/OCF-Docs-Test/tutorials/transfers/Transfers/</loc>
          <lastmod>2022-12-02</lastmod>
          <changefreq>daily</changefreq>
     </url>

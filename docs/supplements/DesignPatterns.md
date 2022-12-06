@@ -1,3 +1,5 @@
+# Design Patterns
+
 ### OCF Types vs OCF Objects
 
 You may notice this distinction in our repo organization, yet both OCF Types and OCF Objects are commonly JSONSchema `object` types (basically meaning they are JSONs).

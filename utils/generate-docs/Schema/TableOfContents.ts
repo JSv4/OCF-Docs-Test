@@ -72,31 +72,31 @@ export default class TableOfContents {
     links_relative_to_path: string
   ) => `## Schemas are divided into five folders:
 
-### [Files](/schema/files)
+### Files
 
 _Describes the eight top-level files that hold OCF objects and are required to export or import a cap table._
 
 ${this.markdownForSchemaNodesOfParentType("files", links_relative_to_path)}
 
-### [Objects](/schema/objects)
+### Objects
 
 _Describing the structure of OCF -- these contain the common object properties \`id\` and \`comments\`_
 
 ${this.markdownForSchemaNodesOfParentType("objects", links_relative_to_path)}
 
-### [Enums](/schema/enums)
+### Enums
 
 _Key enumerations used throughout the schemas_
 
 ${this.markdownForSchemaNodesOfParentType("enums", links_relative_to_path)}
 
-### [Types](/schema/types)
+### Types
 
 _Used as common building blocks for properties that are more complex than primitives but don't need separate unique Ids._
 
 ${this.markdownForSchemaNodesOfParentType("types", links_relative_to_path)}
 
-### [Primitives](/schema/primitives)
+### Primitives
 
 _Used for object property composition and enforcing uniform properties across parts of the schema._
 
