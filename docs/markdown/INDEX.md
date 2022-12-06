@@ -1,6 +1,6 @@
 ## Schemas are divided into five folders:
 
-### [Files](/schema/files)
+### Files
 
 _Describes the eight top-level files that hold OCF objects and are required to export or import a cap table._
 
@@ -52,7 +52,7 @@ _Describes the eight top-level files that hold OCF objects and are required to e
   - **Description:** JSON containing file type identifier and list of vesting terms
   - **View more:** [schema/files/VestingTermsFile](schema/files/VestingTermsFile.md)
 
-### [Objects](/schema/objects)
+### Objects
 
 _Describing the structure of OCF -- these contain the common object properties `id` and `comments`_
 
@@ -278,7 +278,7 @@ _Describing the structure of OCF -- these contain the common object properties `
   - **Description:** Object describing a warrant acceptance transaction
   - **View more:** [schema/objects/transactions/acceptance/WarrantAcceptance](schema/objects/transactions/acceptance/WarrantAcceptance.md)
 
-### [Enums](/schema/enums)
+### Enums
 
 _Key enumerations used throughout the schemas_
 
@@ -454,7 +454,7 @@ _Key enumerations used throughout the schemas_
   - **Description:** Enumeration of vesting trigger types
   - **View more:** [schema/enums/VestingTriggerType](schema/enums/VestingTriggerType.md)
 
-### [Types](/schema/types)
+### Types
 
 _Used as common building blocks for properties that are more complex than primitives but don't need separate unique Ids._
 
@@ -722,7 +722,7 @@ _Used as common building blocks for properties that are more complex than primit
   - **Description:** Sets forth inputs and conversion mechanism of a SAFE (mirrors the flavors and inputs of the Y Combinator SAFE)
   - **View more:** [schema/types/conversion_mechanisms/SAFEConversionMechanism](schema/types/conversion_mechanisms/SAFEConversionMechanism.md)
 
-### [Primitives](/schema/primitives)
+### Primitives
 
 _Used for object property composition and enforcing uniform properties across parts of the schema._
 

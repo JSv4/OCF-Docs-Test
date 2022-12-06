@@ -11,17 +11,10 @@ export interface ObjectConstJson {
 
 export default class ObjectConstProperty extends InlineProperty {
   protected readonly json: ObjectConstJson;
-  protected readonly inMdFileAtPath: string;
 
-  constructor(
-    schema: Schema,
-    json: ObjectConstJson,
-    inMdFileAtPath: string,
-    idOverride?: string
-  ) {
+  constructor(schema: Schema, json: ObjectConstJson, idOverride?: string) {
     super(schema, json, idOverride);
     this.json = json;
-    this.inMdFileAtPath = inMdFileAtPath;
   }
 
   protected const = () => this.json["const"];
