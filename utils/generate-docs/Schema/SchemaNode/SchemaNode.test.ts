@@ -17,12 +17,22 @@ class DummyNode extends SchemaNode {
 
 describe("SchemaNode", () => {
   describe("#sourceSchemaAbsolutePath", () => {
-    it("returns the location of the file relative to the schema", () => {
+    it("returns the absolute path of the source schema from root of repo", () => {
       const schema = new Schema([FIXTURE]);
       const schemaNode = new DummyNode(schema, FIXTURE);
 
       const actual = schemaNode.sourceSchemaAbsolutePath();
       expect(actual).toEqual("schema/files/TestFile.schema.json");
+    });
+  });
+
+  describe("#relativePathToSource", () => {
+    it("returns the relative path of the source schema for this node from the generated MD", () => {
+      const schema = new Schema([FIXTURE]);
+      const schemaNode = new DummyNode(schema, FIXTURE);
+
+      const actual = schemaNode.relativePathToSource();
+      expect(actual).toEqual("../../../../schema/files/TestFile.schema.json");
     });
   });
 
