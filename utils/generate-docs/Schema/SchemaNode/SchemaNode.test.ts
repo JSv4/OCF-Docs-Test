@@ -16,7 +16,7 @@ class DummyNode extends SchemaNode {
 }
 
 describe("SchemaNode", () => {
-  describe("#sourcePath", () => {
+  describe("#sourceSchemaAbsolutePath", () => {
     it("returns the location of the file relative to the schema", () => {
       const schema = new Schema([FIXTURE]);
       const schemaNode = new DummyNode(schema, FIXTURE);
@@ -26,13 +26,27 @@ describe("SchemaNode", () => {
     });
   });
 
-  describe("#outputPath", () => {
+  describe("#outputMarkdownAbslutePath", () => {
     it("returns the location of the markdown doc", () => {
       const schema = new Schema([FIXTURE]);
       const schemaNode = new DummyNode(schema, FIXTURE);
 
       const actual = schemaNode.outputFileAbsolutePath();
       expect(actual).toEqual("docs/markdown/schema/files/TestFile.md");
+    });
+  });
+
+  describe("#relativePathToOutputDocumentation", () => {
+    it("returns the relative path to the markdown for this schema relative to another markdown file at provided path (resulting path will be dropped into markdown at path relative_to_absolute_path)", () => {
+      const schema = new Schema([FIXTURE]);
+      const schemaNode = new DummyNode(schema, FIXTURE);
+      const relative_to_absolute_path =
+        "docs/markdown/schema/enums/TestEnum.md";
+
+      const actual = schemaNode.relativePathToOutputDocumentation(
+        relative_to_absolute_path
+      );
+      expect(actual).toEqual("../files/TestFile.md");
     });
   });
 
