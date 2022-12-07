@@ -21,8 +21,8 @@ describe("SchemaNode", () => {
       const schema = new Schema([FIXTURE]);
       const schemaNode = new DummyNode(schema, FIXTURE);
 
-      const actual = schemaNode.sourcePath();
-      expect(actual).toEqual("/schema/files/TestFile.schema.json");
+      const actual = schemaNode.sourceSchemaAbsolutePath();
+      expect(actual).toEqual("schema/files/TestFile.schema.json");
     });
   });
 
@@ -31,8 +31,8 @@ describe("SchemaNode", () => {
       const schema = new Schema([FIXTURE]);
       const schemaNode = new DummyNode(schema, FIXTURE);
 
-      const actual = schemaNode.documentationPath();
-      expect(actual).toEqual("/docs/schema/files/TestFile.md");
+      const actual = schemaNode.outputFileAbsolutePath();
+      expect(actual).toEqual("docs/markdown/schema/files/TestFile.md");
     });
   });
 
