@@ -80,9 +80,6 @@ describe("Object", () => {
         schema,
         OBJECT_SCHEMA_NODE_FIXTURE
       ).markdownOutput();
-
-      console.log("Actual", actual);
-
       expect(actual).toEqual(`:house: [Documentation Home](../../../README.md)
 
 ---
@@ -105,10 +102,10 @@ describe("Object", () => {
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------- |
 | id           | \`STRING\`                                                                                                                                     | Identifier for the object                                       | \`REQUIRED\` |
 | comments     | [\`STRING\`]                                                                                                                                   | Unstructured text comments related to and stored for the object | -          |
-| object_type  | **Constant:** \`VALUATION\`</br>_Defined in [schema/enums/ObjectType](../enums/ObjectType.md)_                                       | Object type field                                               | \`REQUIRED\` |
+| object_type  | **Constant:** \`VALUATION\`</br>_Defined in [schema/enums/ObjectType](../enums/ObjectType.md)_                                                 | Object type field                                               | \`REQUIRED\` |
 | refProperty1 | \`Test Title\`</br></br>_Description:_ This is a test fixture exemplifying an Enum schema from OCF</br></br>**ONE OF:** </br>&bull; test_enum1 | This is a test fixture exemplifying an Enum schema from OCF     | \`REQUIRED\` |
 
-**Source Code:** [schema/objects/Valuation](../../../schema/objects/Valuation.schema.json)
+**Source Code:** [schema/objects/Valuation](../../../../schema/objects/Valuation.schema.json)
 
 Copyright © 2022 Open Cap Table Coalition.
 `);
