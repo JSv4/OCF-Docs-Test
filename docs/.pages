@@ -1,0 +1,5 @@
+nav:
+  - Introduction: "README.md"
+  - Architecture: markdown/explainers
+  - OCF Schemas: markdown/schema
+  - Tutorials: markdown/tutorials
