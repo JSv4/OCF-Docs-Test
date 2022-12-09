@@ -8,5 +8,8 @@
 # Node
 node_modules
 
+# Python
+venv
+
 # MkDocs
 site/
