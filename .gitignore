@@ -10,3 +10,6 @@ node_modules
 
 # Python
 venv
+
+# Mkdocs-generated Folder
+site
