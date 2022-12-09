@@ -20,10 +20,6 @@
       "minimum": 1
     }
   },
-  "required": [
-    "length",
-    "type",
-    "occurrences"
-  ],
+  "required": ["length", "type", "occurrences"],
   "$comment": "Copyright © 2022 Open Cap Table Coalition (https://opencaptablecoalition.com) / Original File: https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/tree/main/schemaprimitives/types/vesting/VestingPeriod.schema.json"
 }
