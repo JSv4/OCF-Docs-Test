@@ -159,7 +159,11 @@
     ],
     "seniority": 1,
     "pro_rata": "2500",
-    "comments": ["comment-one", "comment-two", "..."]
+    "comments": [
+      "comment-one",
+      "comment-two",
+      "..."
+    ]
   }
 ]
 ```
