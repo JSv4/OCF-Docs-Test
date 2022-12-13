@@ -42,7 +42,7 @@ describe("SchemaNode", () => {
       const schemaNode = new DummyNode(schema, FIXTURE);
 
       const actual = schemaNode.outputFileAbsolutePath();
-      expect(actual).toEqual("docs/markdown/schema/files/TestFile.md");
+      expect(actual).toEqual("docs/schema_markdown/schema/files/TestFile.md");
     });
   });
 
@@ -51,7 +51,7 @@ describe("SchemaNode", () => {
       const schema = new Schema([FIXTURE]);
       const schemaNode = new DummyNode(schema, FIXTURE);
       const relative_to_absolute_path =
-        "docs/markdown/schema/enums/TestEnum.md";
+        "docs/schema_markdown/schema/enums/TestEnum.md";
 
       const actual = schemaNode.relativePathToOutputDocumentation(
         relative_to_absolute_path
