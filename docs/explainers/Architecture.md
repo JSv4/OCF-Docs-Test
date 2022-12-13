@@ -7,7 +7,7 @@ _OCF is designed to be extremely expressive and extensible. Pay particular atten
 OCF is powered by an event-driven architecture. All Stocks, Plan Securities, Warrants and Convertibles have
 object-specific events that are added to an event "stack" to represent the history of that security. These events
 describe the relevant data needed to describe key events such as issuances, transfers, conversions, etc. You can
-see a full list of event transactions supported in our [transactions schemas folder](../schema/objects/transactions).
+see a full list of event transactions supported in our [transactions schemas folder](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/tree/main/schema/objects/transactions).
 
 Here's an example of how an event stack would work to track the lifecycle of a single issuance of preferred stock:
 
@@ -31,9 +31,9 @@ And here's what some sample data looks like in practice:
 
 ![](../images/OCF%20Conversion%20Example.png)
 
-## Vesting
+## Lossless Vesting
 
-Our vesting data model supports arbitrarily-complex trees of dependent vesting conditions that can mix time-based and event-based vesting (e.g. vesting over time and "milestone" vesting, in any execution order with any desired dependencies). We are working on more comprehensive documentation for these concepts. In the meantime, please review the [vesting terms object](../schema/objects/VestingTerms.schema.json) (essentially a "vesting schedule"). the vesting OCF Types in [/schema/types/vesting](../schema/types/vesting/), and the vesting events in [/schema/objects/transactions/vesting](../schema/objects/transactions/vesting/) (which are used to indicate when a given vesting schedule starts for a given security and when a milestone-based condition is satisfied).
+Our vesting data model supports arbitrarily-complex trees of dependent vesting conditions that can mix time-based and event-based vesting (e.g. vesting over time and "milestone" vesting, in any execution order with any desired dependencies). We are working on more comprehensive documentation for these concepts. In the meantime, please review the [vesting terms object](../schema_markdown/schema/objects/VestingTerms.md) (essentially a "vesting schedule"). the vesting OCF Types in [/schema/types/vesting](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/tree/main/schema/types/vesting), and the vesting events in [/schema/objects/transactions/vesting](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/tree/main/schema/objects/transactions/vesting) (which are used to indicate when a given vesting schedule starts for a given security and when a milestone-based condition is satisfied).
 
 You can see example vesting schedules in our samples.
 
@@ -49,21 +49,21 @@ OCF objects are grouped and stored in eight file types (defined in our file sche
 
 _There are currently 8 file types that make up a cap table_:
 
-1. [A Manifest File](../schema/files/OCFManifestFile.md) - The manifest holds basic issuer information and
+1. [A Manifest File](../schema_markdown/schema/files/OCFManifestFile.md) - The manifest holds basic issuer information and
    references to the instances of the other 7 file types needed to represent a company's capitalization history.
-2. [Stakeholders File(s)](../schema/files/StakeholdersFile.md) - One or more files listing all stakeholders
+2. [Stakeholders File(s)](../schema_markdown/schema/files/StakeholdersFile.md) - One or more files listing all stakeholders
    of the Company. Stakeholder types are enumerated in our standard, and we welcome comments on how to categorize
    stakeholders.
-3. [Stock Classes File(s)](../schema/files/StockClassesFile.md) - One or more files listing all classes /
+3. [Stock Classes File(s)](../schema_markdown/schema/files/StockClassesFile.md) - One or more files listing all classes /
    series of stock issued by the issuer.
-4. [Stock Legend Templates File(s)](../schema/files/StockLegendTemplatesFile.md) - One or more files storing the
+4. [Stock Legend Templates File(s)](../schema_markdown/schema/files/StockLegendTemplatesFile.md) - One or more files storing the
    legends used by the issuer.
-5. [Stock Plans File(s)](../schema/files/StockPlansFile.md) - One or more files storing the issuer's stock plans
+5. [Stock Plans File(s)](../schema_markdown/schema/files/StockPlansFile.md) - One or more files storing the issuer's stock plans
    and related information.
-6. [Transactions File(s)](../schema/files/TransactionsFile.md) - One or more files storing the transactions for
+6. [Transactions File(s)](../schema_markdown/schema/files/TransactionsFile.md) - One or more files storing the transactions for
    the issuers. Any of our transaction event objects are supported.
-7. [Valuations File(s)](../schema/files/ValuationsFile.md) - One or more files storing valuations for the issuer.
-8. [Vesting Terms File(s)](../schema/files/VestingTermsFile.md) - One or more files storing vesting
+7. [Valuations File(s)](../schema_markdown/schema/files/ValuationsFile.md) - One or more files storing valuations for the issuer.
+8. [Vesting Terms File(s)](../schema_markdown/schema/files/VestingTermsFile.md) - One or more files storing vesting
    schedules used by the issuer.
 
 **At the moment, we recommend combining all of these files into a single compressed file with a \*.ocf.zip extension:**

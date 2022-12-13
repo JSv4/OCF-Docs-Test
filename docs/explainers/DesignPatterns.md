@@ -12,7 +12,7 @@ You may notice this distinction in our repo organization, yet both OCF Types and
 
 In order to improve code quality, reduce repetition and provide for a better developer experience, OCF schemas rely
 heavily on [object composition](https:/en.wikipedia.org/wiki/Object_composition). In the
-[primitives folder](/schema/primitives), you'll see a folder structure that mirrors the overall `/schema` folder. Where a number of related OCF Objects or OCF Types share properties, we create a "primitive" object in this primitives folder. This primitive's path in the primitives folder must mirror the path to the OCF Object(s) or OCF Type(s) composed from it. We incorporate the properties in these primitives
+[primitives folder](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/tree/main/schema/primitives), you'll see a folder structure that mirrors the overall `/schema` folder. Where a number of related OCF Objects or OCF Types share properties, we create a "primitive" object in this primitives folder. This primitive's path in the primitives folder must mirror the path to the OCF Object(s) or OCF Type(s) composed from it. We incorporate the properties in these primitives
 into OCF objects by using the JSONSchema [allOf](https:/json-schema.org/understanding-json-schema/reference/combining.html)
 property.
 
@@ -20,13 +20,13 @@ Where there are different "flavors" of a given primitive - e.g. the primitive `C
 
 **Here are a couple of concrete object composition examples:**
 
-1. The `ConversionTrigger` OCF Types like `AutomaticConversionOnConditionTrigger` and `ElectiveConversionOnConditionTrigger` are all composed from `ConversionTrigger`. The primitive can be found at [/schema/primitives/types/conversion_triggers/](/schema/primitives/types/conversion_triggers/) while the OCF Types composed from this primitive can be found in [/schema/types/conversion_triggers/](/schema/types/conversion_triggers/) [objects folder](/schema/objects).
-2. All OCF Objects must be composed of the [Object](/schema/primitives/objects/Object.schema.json) which ensures there is a required object id field on all OCF Objects. This can be found in `/schema/primitives/objects` as all objects in the `/schema/objects` folder will incorporate its properties.
+1. The `ConversionTrigger` OCF Types like `AutomaticConversionOnConditionTrigger` and `ElectiveConversionOnConditionTrigger` are all composed from `ConversionTrigger`. The primitive can be found at [/schema/primitives/types/conversion_triggers/](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/tree/main/schema/primitives/types/conversion_triggers) while the OCF Types composed from this primitive can be found in [/schema/types/conversion_triggers/](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/tree/main/schema/types/conversion_triggers).
+2. All OCF Objects must be composed of the [Object](../schema_markdown/schema/primitives/objects/Object.md) which ensures there is a required object id field on all OCF Objects. This can be found in `/schema/primitives/objects` as all objects in the `/schema/objects` folder will incorporate its properties.
 3. All of our transaction events must have properties listed in the
-   [Transaction](/schema/primitives/transactions/Transaction.schema.json) schema. Then, different groups of
+   [Transaction](../schema_markdown/schema/primitives/objects/transactions/Transaction.md) schema. Then, different groups of
    transaction events share some common properties, and these are enforced by incorporating more specific primitives -
    e.g. all issues (whether of stock, plan securities, warrants or convertibles) must incorporate the properties set
-   forth in [Acceptance](/schema/primitives/transactions/acceptance/Acceptance.schema.json) _in addition to the
+   forth in [Acceptance](../schema_markdown/schema/primitives/objects/transactions/acceptance/Acceptance.md) _in addition to the
    properties in Transaction_.
 
 ### What's with the empty properties (e.g. {}) in your schemas?
