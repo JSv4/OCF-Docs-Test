@@ -42,20 +42,7 @@ export default class Schema {
     );
     await SchemaWriter.write(REPO_ROOT, schema);
 
-    // Suggest we don't generate our own TOC anymore as MkDocs is doing it.
-    // await TableOfContents.write(
-    //   schema,
-    //   REPO_ROOT,
-    //   path.join("docs", "README.md")
-    // );
-
-    // Suggest we autogenerate a TOC for each dir in schema_markdown/schema so we can link to "Folders"
-    // still which will provide an index to the relevant concepts in that folder.
-    await TableOfContents.write_index(
-      schema,
-      REPO_ROOT,
-      path.join("docs", "schema_markdown", "INDEX.md")
-    );
+    // Note - switched off generating TOCs per TWG discussion
   };
 
   readonly schemaNodes: SchemaNode[];
