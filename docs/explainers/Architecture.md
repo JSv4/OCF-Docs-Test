@@ -17,9 +17,9 @@ Here's an example of how an event stack would work to track the lifecycle of a s
 
 The conversion of one OCF security into another is modeled using three key concepts which describe how, when and into what a convertible security converts into:
 
-1. [Conversion Right](../schema/types/conversion_rights/): what can the security convert into?
-2. [Conversion Trigger](..schema/types/conversion_triggers/): when and under what conditions does the Conversion Right come into effect?
-3. [Conversion Mechanism](../schema/types/conversion_mechanisms/): how is the coversion amount calculated?
+1. [Conversion Right](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/tree/main/schema/types/conversion_rights): what can the security convert into?
+2. [Conversion Trigger](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/tree/main/schema/types/conversion_triggers): when and under what conditions does the Conversion Right come into effect?
+3. [Conversion Mechanism](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/tree/main/schema/types/conversion_mechanisms): how is the coversion amount calculated?
 
 We use the same design patterns for convertible stock (e.g. preferred stock converting into common), warrants (which don't "convert" but can be "exercised") and convertible securities (e.g. notes).
 
