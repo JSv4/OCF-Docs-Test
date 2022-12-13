@@ -89,7 +89,7 @@ export default abstract class SchemaNode {
    * Within the resulting /docs folder, what is the absolute path for the resulting markdown file when written to disk?
    * @returns "absolute" path from the /docs folder to resulting MD.
    */
-  outputFileAbsolutePath = () => `docs/markdown/${this.shortId()}.md`;
+  outputFileAbsolutePath = () => `docs/schema_markdown/${this.shortId()}.md`;
 
   /**
    * Using repo root as root, what is the absolute path of the schema used to generate this MD file?

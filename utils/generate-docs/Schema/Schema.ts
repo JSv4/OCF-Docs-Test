@@ -49,12 +49,12 @@ export default class Schema {
     //   path.join("docs", "README.md")
     // );
 
-    // Suggest we autogenerate a TOC for each dir in markdown/schema so we can link to "Folders"
+    // Suggest we autogenerate a TOC for each dir in schema_markdown/schema so we can link to "Folders"
     // still which will provide an index to the relevant concepts in that folder.
     await TableOfContents.write_index(
       schema,
       REPO_ROOT,
-      path.join("docs", "markdown", "INDEX.md")
+      path.join("docs", "schema_markdown", "INDEX.md")
     );
   };
 
